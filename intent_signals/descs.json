@@ -1,0 +1,854 @@
+{
+    "IAB11": {
+        "description": "Law Government and Politics",
+        "group": "iab"
+    },
+    "IAB7-1": {
+        "description": "Exercise",
+        "group": "iab"
+    },
+    "IAB7-44": {
+        "description": "Weight Loss",
+        "group": "iab"
+    },
+    "IAB7-15": {
+        "description": "Cold and Flu",
+        "group": "iab"
+    },
+    "IAB7-19": {
+        "description": "Dermatology",
+        "group": "iab"
+    },
+    "IAB7-25": {
+        "description": "Herbs for Health",
+        "group": "iab"
+    },
+    "IAB7-31": {
+        "description": "Mens Health",
+        "group": "iab"
+    },
+    "IAB7-32": {
+        "description": "Nutrition",
+        "group": "iab"
+    },
+    "IAB7-38": {
+        "description": "Senior Health",
+        "group": "iab"
+    },
+    "IAB7-4": {
+        "description": "Allergies",
+        "group": "iab"
+    },
+    "IAB7-41": {
+        "description": "Smoking Cessation",
+        "group": "iab"
+    },
+    "IAB7-45": {
+        "description": "Womens Health",
+        "group": "iab"
+    },
+    "IAB7-26": {
+        "description": "Holistic Healing",
+        "group": "iab"
+    },
+    "IAB7-5": {
+        "description": "Alternative Medecine",
+        "group": "iab"
+    },
+    "IAB13-9": {
+        "description": "Options",
+        "group": "iab"
+    },
+    "IAB10": {
+        "description": "Home & Garden",
+        "group": "iab"
+    },
+    "IAB4": {
+        "description": "Careers",
+        "group": "iab"
+    },
+    "IAB17-12": {
+        "description": "Football",
+        "group": "iab"
+    },
+    "IAB21": {
+        "description": "Real Estate",
+        "group": "iab"
+    },
+    "IAB5": {
+        "description": "Education",
+        "group": "iab"
+    },
+    "IAB6-2": {
+        "description": "Babies & Toddlers",
+        "group": "iab"
+    },
+    "IAB14": {
+        "description": "Society",
+        "group": "iab"
+    },
+    "IAB21-1": {
+        "description": "Apartments",
+        "group": "iab"
+    },
+    "IAB17-27": {
+        "description": "Pro Ice Hockey",
+        "group": "iab"
+    },
+    "IAB2": {
+        "description": "Automotive",
+        "group": "iab"
+    },
+    "IAB6-3": {
+        "description": "Daycare/Pre School",
+        "group": "iab"
+    },
+    "IAB5-10": {
+        "description": "Homeschooling",
+        "group": "iab"
+    },
+    "IAB5-7": {
+        "description": "English as a 2nd Language",
+        "group": "iab"
+    },
+    "IAB22": {
+        "description": "Shopping",
+        "group": "iab"
+    },
+    "IAB8": {
+        "description": "Food & Drink",
+        "group": "iab"
+    },
+    "IAB13-4": {
+        "description": "Financial Planning",
+        "group": "iab"
+    },
+    "IAB19": {
+        "description": "Technology & Computing",
+        "group": "iab"
+    },
+    "IAB13-2": {
+        "description": "Credit/Debt & Loans",
+        "group": "iab"
+    },
+    "IAB2-3": {
+        "description": "Buying/Selling Cars",
+        "group": "iab"
+    },
+    "IAB13-7": {
+        "description": "Investing",
+        "group": "iab"
+    },
+    "IAB6-4": {
+        "description": "Family Internet",
+        "group": "iab"
+    },
+    "IAB4-7": {
+        "description": "Nursing",
+        "group": "iab"
+    },
+    "IAB13-11": {
+        "description": "Stocks",
+        "group": "iab"
+    },
+    "IAB14-1": {
+        "description": "Dating",
+        "group": "iab"
+    },
+    "IAB10-5": {
+        "description": "Home Repair",
+        "group": "iab"
+    },
+    "IAB21-3": {
+        "description": "Buying/Selling Homes",
+        "group": "iab"
+    },
+    "IAB13-5": {
+        "description": "Hedge Fund",
+        "group": "iab"
+    },
+    "IAB17": {
+        "description": "Sports",
+        "group": "iab"
+    },
+    "IAB18": {
+        "description": "Style & Fashion",
+        "group": "iab"
+    },
+    "IAB15": {
+        "description": "Science",
+        "group": "iab"
+    },
+    "IAB13-12": {
+        "description": "Tax Planning",
+        "group": "iab"
+    },
+    "IAB17-26": {
+        "description": "Pro Basketball",
+        "group": "iab"
+    },
+    "IAB13-3": {
+        "description": "Financial News",
+        "group": "iab"
+    },
+    "IAB13-10": {
+        "description": "Retirement Planning",
+        "group": "iab"
+    },
+    "IAB1": {
+        "description": "Arts & Entertainment",
+        "group": "iab"
+    },
+    "IAB14-4": {
+        "description": "Marriage",
+        "group": "iab"
+    },
+    "IAB16": {
+        "description": "Pets",
+        "group": "iab"
+    },
+    "IAB4-4": {
+        "description": "Job Fairs",
+        "group": "iab"
+    },
+    "IAB6-5": {
+        "description": "Parenting - K-6 Kids",
+        "group": "iab"
+    },
+    "IAB14-2": {
+        "description": "Divorce Support",
+        "group": "iab"
+    },
+    "IAB2-16": {
+        "description": "Off-Road Vehicles",
+        "group": "iab"
+    },
+    "IAB13-6": {
+        "description": "Insurance",
+        "group": "iab"
+    },
+    "IAB2-15": {
+        "description": "Mororcycles",
+        "group": "iab"
+    },
+    "IAB3-5": {
+        "description": "Construction",
+        "group": "iab"
+    },
+    "IAB7": {
+        "description": "Health & Fitness",
+        "group": "iab"
+    },
+    "IAB20": {
+        "description": "Travel",
+        "group": "iab"
+    },
+    "IAB13": {
+        "description": "Personal Finance",
+        "group": "iab"
+    },
+    "IAB10-9": {
+        "description": "Remodeling & Construction",
+        "group": "iab"
+    },
+    "IAB3": {
+        "description": "Business",
+        "group": "iab"
+    },
+    "IAB14-7": {
+        "description": "Weddings",
+        "group": "iab"
+    },
+    "IAB4-5": {
+        "description": "Job Search",
+        "group": "iab"
+    },
+    "IAB2-2": {
+        "description": "Auto Repair",
+        "group": "iab"
+    },
+    "IAB10-8": {
+        "description": "Landscaping",
+        "group": "iab"
+    },
+    "IAB4-10": {
+        "description": "U.S. Military",
+        "group": "iab"
+    },
+    "IAB13-8": {
+        "description": "Mutual Funds",
+        "group": "iab"
+    },
+    "IAB12": {
+        "description": "News",
+        "group": "iab"
+    },
+    "IAB9": {
+        "description": "Hobbies & Interests",
+        "group": "iab"
+    },
+    "IAB5-13": {
+        "description": "Private School",
+        "group": "iab"
+    },
+    "IAB14-5": {
+        "description": "Senior Living",
+        "group": "iab"
+    },
+    "IAB6": {
+        "description": "Family & Parenting",
+        "group": "iab"
+    },
+    "IAB13-1": {
+        "description": "Beginning Investing",
+        "group": "iab"
+    },
+    "IAB3-Farm": {
+        "description": "Farming",
+        "group": "lbd1"
+    },
+    "IAB7-VD": {
+        "description": "Vegetarian Diet",
+        "group": "lbd1"
+    },
+    "IAB7-SaM": {
+        "description": "Spa and Massage",
+        "group": "lbd1"
+    },
+    "IAB1-ABC": {
+        "description": "ABC",
+        "group": "lbd1"
+    },
+    "IAB1-CBS2": {
+        "description": "CBS",
+        "group": "lbd1"
+    },
+    "IAB1-ESPN1": {
+        "description": "ESPN",
+        "group": "lbd1"
+    },
+    "IAB1-FOX": {
+        "description": "Fox",
+        "group": "lbd1"
+    },
+    "IAB1-FX": {
+        "description": "FX",
+        "group": "lbd1"
+    },
+    "IAB1-HBO": {
+        "description": "HBO",
+        "group": "lbd1"
+    },
+    "IAB1-NBC": {
+        "description": "NBC",
+        "group": "lbd1"
+    },
+    "IAB1-OWN": {
+        "description": "OWN",
+        "group": "lbd1"
+    },
+    "IAB1-Show": {
+        "description": "Showtime",
+        "group": "lbd1"
+    },
+    "IAB1-Starz": {
+        "description": "Starz",
+        "group": "lbd1"
+    },
+    "IAB1-TBS": {
+        "description": "TBS",
+        "group": "lbd1"
+    },
+    "IAB1-APTV": {
+        "description": "Apple TV",
+        "group": "lbd1"
+    },
+    "IAB1-DisPlus": {
+        "description": "Disney Plus",
+        "group": "lbd1"
+    },
+    "IAB3-Recruit": {
+        "description": "Recruiters",
+        "group": "lbd1"
+    },
+    "IAB3-RemW": {
+        "description": "Remote Work",
+        "group": "lbd1"
+    },
+    "IAB13-FinS": {
+        "description": "Financial Services",
+        "group": "lbd1"
+    },
+    "IAB13-HIns": {
+        "description": "Health Insurance",
+        "group": "lbd1"
+    },
+    "IAB13-LI": {
+        "description": "Life Insurance",
+        "group": "lbd1"
+    },
+    "IAB13-PfR": {
+        "description": "Planning for Retirement",
+        "group": "lbd1"
+    },
+    "IAB13-REI": {
+        "description": "Real Estate Investor",
+        "group": "lbd1"
+    },
+    "IAB4-Carr": {
+        "description": "Careers",
+        "group": "lbd1"
+    },
+    "IAB4-Job": {
+        "description": "Job Search",
+        "group": "lbd1"
+    },
+    "IAB4-RW": {
+        "description": "Remote Working",
+        "group": "lbd1"
+    },
+    "IAB4-Ret": {
+        "description": "Retirement",
+        "group": "lbd1"
+    },
+    "IAB6-Par": {
+        "description": "Parenting Teens",
+        "group": "lbd1"
+    },
+    "IAB6-SL": {
+        "description": "Senior Living",
+        "group": "lbd1"
+    },
+    "IAB7-ND": {
+        "description": "Neurological Disorders",
+        "group": "lbd1"
+    },
+    "IAB7-CaF": {
+        "description": "Cold and Flu",
+        "group": "lbd1"
+    },
+    "IAB7-HI": {
+        "description": "Hearing Impaired",
+        "group": "lbd1"
+    },
+    "IAB7-ENa": {
+        "description": "Ear Nose and Throat",
+        "group": "lbd1"
+    },
+    "IAB7-ED": {
+        "description": "Eating Disorders",
+        "group": "lbd1"
+    },
+    "IAB7-TD": {
+        "description": "Thyroid Disease",
+        "group": "lbd1"
+    },
+    "IAB7-EaM": {
+        "description": "Endocrine and Metabolic Diseases",
+        "group": "lbd1"
+    },
+    "IAB7-E": {
+        "description": "Epidemic",
+        "group": "lbd1"
+    },
+    "IAB7-VI": {
+        "description": "Vision Impaired",
+        "group": "lbd1"
+    },
+    "IAB7-ID": {
+        "description": "Infectious Diseases",
+        "group": "lbd1"
+    },
+    "IAB7-FAC": {
+        "description": "First Aid Care",
+        "group": "lbd1"
+    },
+    "IAB7-IaA": {
+        "description": "Injuries and Accidents",
+        "group": "lbd1"
+    },
+    "IAB7-ADD": {
+        "description": "Attention Deficit Disorder",
+        "group": "lbd1"
+    },
+    "IAB7-AaA": {
+        "description": "Autism and Asperger's",
+        "group": "lbd1"
+    },
+    "IAB7-MHC": {
+        "description": "Mental Health Conditions",
+        "group": "lbd1"
+    },
+    "IAB7-SAa": {
+        "description": "Substance Abuse and Alcoholism",
+        "group": "lbd1"
+    },
+    "IAB7-DaC": {
+        "description": "Diseases and Conditions",
+        "group": "lbd1"
+    },
+    "IAB7-Hosp": {
+        "description": "Hospital Care",
+        "group": "lbd1"
+    },
+    "IAB7-H": {
+        "description": "Healthcare",
+        "group": "lbd1"
+    },
+    "IAB7-Labs": {
+        "description": "Labs and Medical Tests",
+        "group": "lbd1"
+    },
+    "IAB7-Imm": {
+        "description": "Immunology",
+        "group": "lbd1"
+    },
+    "IAB7-MR": {
+        "description": "Medical Research",
+        "group": "lbd1"
+    },
+    "IAB7-Onc": {
+        "description": "Oncology",
+        "group": "lbd1"
+    },
+    "IAB7-Pharm": {
+        "description": "Pharmacology",
+        "group": "lbd1"
+    },
+    "IAB7-Phys": {
+        "description": "Physiology",
+        "group": "lbd1"
+    },
+    "IAB7-Psyc": {
+        "description": "Psychology and Psychoanalysis",
+        "group": "lbd1"
+    },
+    "IAB7-Psyc2": {
+        "description": "Psychology and Psychiatry",
+        "group": "lbd1"
+    },
+    "IAB7-PD": {
+        "description": "Pharmaceutical Drugs",
+        "group": "lbd1"
+    },
+    "IAB7-Sx": {
+        "description": "Surgery",
+        "group": "lbd1"
+    },
+    "IAB7-MH": {
+        "description": "Medical Health",
+        "group": "lbd1"
+    },
+    "IAB7-NBS": {
+        "description": "New Business Startups",
+        "group": "lbd1"
+    },
+    "IAB13-SB": {
+        "description": "Stocks & Bonds",
+        "group": "lbd1"
+    },
+    "IAB13-M": {
+        "description": "Mortgages",
+        "group": "lbd1"
+    },
+    "IAB13-S": {
+        "description": "Student",
+        "group": "lbd1"
+    },
+    "IAB13-RP": {
+        "description": "Retirement Planning",
+        "group": "lbd1"
+    },
+    "IAB21-PreMove": {
+        "description": "Pre-Movers",
+        "group": "lbd1"
+    },
+    "IAB2B-1": {
+        "description": "Banking",
+        "group": "lbd1"
+    },
+    "IAB2B-2": {
+        "description": "Business Loans",
+        "group": "lbd1"
+    },
+    "IAB2B-3": {
+        "description": "Business Accounting",
+        "group": "lbd1"
+    },
+    "IAB2B-4": {
+        "description": "Economic Forecasting",
+        "group": "lbd1"
+    },
+    "IAB2B-5": {
+        "description": "Economist",
+        "group": "lbd1"
+    },
+    "IAB2B-6": {
+        "description": "Financial Analyst",
+        "group": "lbd1"
+    },
+    "IAB2B-7": {
+        "description": "Insurance",
+        "group": "lbd1"
+    },
+    "IAB2B-8": {
+        "description": "Investment Banking",
+        "group": "lbd1"
+    },
+    "IAB2B-9": {
+        "description": "Wealth Management",
+        "group": "lbd1"
+    },
+    "IAB2B-12": {
+        "description": "K-12 Teachers",
+        "group": "lbd1"
+    },
+    "IAB2B-13": {
+        "description": "Geriatric Care",
+        "group": "lbd1"
+    },
+    "IAB2B-14": {
+        "description": "Medical Practice",
+        "group": "lbd1"
+    },
+    "IAB2B-15": {
+        "description": "Public Health",
+        "group": "lbd1"
+    },
+    "IAB2B-16": {
+        "description": "Alternative Medicine",
+        "group": "lbd1"
+    },
+    "IAB2B-17": {
+        "description": "Dermatology",
+        "group": "lbd1"
+    },
+    "IAB2B-18": {
+        "description": "Emergency Medicine",
+        "group": "lbd1"
+    },
+    "IAB2B-19": {
+        "description": "Family Medicine",
+        "group": "lbd1"
+    },
+    "IAB2B-20": {
+        "description": "Gastroenterology",
+        "group": "lbd1"
+    },
+    "IAB2B-21": {
+        "description": "Internal Medicine",
+        "group": "lbd1"
+    },
+    "IAB2B-22": {
+        "description": "Neurology",
+        "group": "lbd1"
+    },
+    "IAB2B-23": {
+        "description": "Nuclear Medicine",
+        "group": "lbd1"
+    },
+    "IAB2B-24": {
+        "description": "Orthopedics",
+        "group": "lbd1"
+    },
+    "IAB2B-25": {
+        "description": "Pathology",
+        "group": "lbd1"
+    },
+    "IAB2B-26": {
+        "description": "Pediatrics",
+        "group": "lbd1"
+    },
+    "IAB2B-27": {
+        "description": "Physical Therapy",
+        "group": "lbd1"
+    },
+    "IAB2B-28": {
+        "description": "Podiatry",
+        "group": "lbd1"
+    },
+    "IAB2B-29": {
+        "description": "Primary Care",
+        "group": "lbd1"
+    },
+    "IAB2B-30": {
+        "description": "Radiology",
+        "group": "lbd1"
+    },
+    "IAB2B-31": {
+        "description": "Plastic Surgery",
+        "group": "lbd1"
+    },
+    "IAB2B-32": {
+        "description": "Rheumatology",
+        "group": "lbd1"
+    },
+    "IAB2B-33": {
+        "description": "Sports Medicine",
+        "group": "lbd1"
+    },
+    "IAB2B-34": {
+        "description": "Chinese Medicine",
+        "group": "lbd1"
+    },
+    "IAB2B-35": {
+        "description": "Urology",
+        "group": "lbd1"
+    },
+    "IAB2B-36": {
+        "description": "Telehealth",
+        "group": "lbd1"
+    },
+    "IAB2B-37": {
+        "description": "Ad Blocking",
+        "group": "lbd2"
+    },
+    "IAB2B-38": {
+        "description": "Ad Networks",
+        "group": "lbd2"
+    },
+    "IAB2B-39": {
+        "description": "Ad Servers",
+        "group": "lbd2"
+    },
+    "IAB2B-40": {
+        "description": "Ad Verification",
+        "group": "lbd2"
+    },
+    "IAB2B-41": {
+        "description": "Audience Engagement",
+        "group": "lbd2"
+    },
+    "IAB2B-42": {
+        "description": "Consent Management Platform",
+        "group": "lbd2"
+    },
+    "IAB2B-43": {
+        "description": "Corporate Blogging",
+        "group": "lbd2"
+    },
+    "IAB2B-44": {
+        "description": "Corporate Website",
+        "group": "lbd2"
+    },
+    "IAB2B-45": {
+        "description": "Crowdsourcing",
+        "group": "lbd2"
+    },
+    "IAB2B-46": {
+        "description": "Customer Data Platform (CDP)",
+        "group": "lbd2"
+    },
+    "IAB2B-47": {
+        "description": "Customer Relationship Management (CRM)",
+        "group": "lbd2"
+    },
+    "IAB2B-48": {
+        "description": "Data-driven Marketing",
+        "group": "lbd2"
+    },
+    "IAB2B-49": {
+        "description": "Digital Media",
+        "group": "lbd2"
+    },
+    "IAB2B-50": {
+        "description": "Direct Mail",
+        "group": "lbd2"
+    },
+    "IAB2B-51": {
+        "description": "Email Campaign",
+        "group": "lbd2"
+    },
+    "IAB2B-52": {
+        "description": "Email Marketing Automation",
+        "group": "lbd2"
+    },
+    "IAB2B-53": {
+        "description": "Email Service Providers",
+        "group": "lbd2"
+    },
+    "IAB2B-54": {
+        "description": "Engagement Platform",
+        "group": "lbd2"
+    },
+    "IAB2B-55": {
+        "description": "Global Email Marketing",
+        "group": "lbd2"
+    },
+    "IAB2B-56": {
+        "description": "Internet Marketing",
+        "group": "lbd2"
+    },
+    "IAB2B-57": {
+        "description": "Live Content Feed",
+        "group": "lbd2"
+    },
+    "IAB2B-58": {
+        "description": "Market Expansion",
+        "group": "lbd2"
+    },
+    "IAB2B-59": {
+        "description": "Market Research",
+        "group": "lbd2"
+    },
+    "IAB2B-60": {
+        "description": "Marketing Analytics",
+        "group": "lbd2"
+    },
+    "IAB2B-61": {
+        "description": "Marketing Campaigns",
+        "group": "lbd2"
+    },
+    "IAB2B-62": {
+        "description": "Marketing Communications",
+        "group": "lbd2"
+    },
+    "IAB2B-63": {
+        "description": "Marketing Email",
+        "group": "lbd2"
+    },
+    "IAB2B-64": {
+        "description": "Marketing Programs",
+        "group": "lbd2"
+    },
+    "IAB2B-65": {
+        "description": "Marketing Tools",
+        "group": "lbd2"
+    },
+    "IAB2B-66": {
+        "description": "Media Management Systems",
+        "group": "lbd2"
+    },
+    "IAB2B-67": {
+        "description": "Media Planning",
+        "group": "lbd2"
+    },
+    "IAB2B-68": {
+        "description": "Online Lead Generation",
+        "group": "lbd2"
+    },
+    "IAB2B-69": {
+        "description": "Programmatic Buying",
+        "group": "lbd2"
+    },
+    "IAB2B-70": {
+        "description": "Real Time Personalization",
+        "group": "lbd2"
+    },
+    "IAB2B-71": {
+        "description": "Search Engine Optimization (SEO)",
+        "group": "lbd2"
+    },
+    "IAB2B-72": {
+        "description": "Social Media Marketing",
+        "group": "lbd2"
+    },
+    "IAB2B-73": {
+        "description": "Survey Data",
+        "group": "lbd2"
+    },
+    "IAB2B-74": {
+        "description": "Web Banner",
+        "group": "lbd2"
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+      "name": "event_id",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "event_type",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "user_id",
+      "type": "long",
+      "required": false
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true
+    },
+    {
+      "name": "session_id",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "properties",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "device_type",
+      "type": "string",
+      "required": false
+    },
+    {
+      "name": "ip_address",
+      "type": "string",
+      "required": false
+    }
+  ]
+} 

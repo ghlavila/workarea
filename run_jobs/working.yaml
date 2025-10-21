@@ -1,0 +1,119 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Growth Signals processing pipeline with Lambda-triggered EC2 launch using a Launch Template and scheduled execution'
+
+Resources:
+  EC2LaunchTemplate:
+    Type: AWS::EC2::LaunchTemplate
+    Properties:
+      LaunchTemplateName: GrowthSignalsLaunchTemplate
+      LaunchTemplateData:
+        ImageId: ami-0ebfd941bbafe70c6
+        InstanceType: c6id.12xlarge
+        SecurityGroupIds:
+          - sg-0407dd74c56b2727d
+          - sg-04cdf630d72a56bd9
+        InstanceInitiatedShutdownBehavior: terminate
+        #InstanceMarketOptions:
+        #  MarketType: spot
+        #  SpotOptions:
+        #    SpotInstanceType: one-time
+        TagSpecifications:
+          - ResourceType: instance
+            Tags:
+              - Key: Name
+                Value: growth-signals
+              - Key: AutoStart
+                Value: "true"
+        UserData:
+          Fn::Base64: !Sub |
+            #!/bin/bash
+            # Mount EFS volume
+            yum install -y amazon-efs-utils
+            mkdir -p /data
+            mount -t efs fs-0df4c6640249cc812 /data
+
+            # Create lavila user
+            useradd -m -c "Luis Avila" -G wheel -s /bin/bash -d /data/home/lavila lavila
+            echo "lavila ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/lavila
+
+            # Run startup script
+            /data/bin/startup.sh
+
+            # Change lavila's home directory
+            usermod -d /data/home/lavila lavila
+
+            # Run commands as a specific user
+            sudo -iu lavila bash << EOF
+            # mount the local nvme storage as /sdata
+            /data/git/data_processing/scripts/mount_sdata.sh
+            # mount the gh-data-proc s3 bucket
+            /data/git/data_processing/scripts/mount_buckets.sh gh-data-proc
+
+            # get the most recent code from git
+            cd /data/git/data_processing/ && git pull
+            # run the build 
+            LOG_FILE="/gh_data_proc/logs/growth_signals/master/growth_signals_build_\$(date +%Y%m%d).log"
+            /data/git/data_processing/run_jobs/growth_signals.sh > "\$LOG_FILE" 2>&1
+            EOF
+
+            # Wait for all background processes to finish
+            wait
+
+            # Initiate shutdown
+            shutdown -h now
+
+  LaunchEC2Function:
+    Type: AWS::Lambda::Function
+    Properties:
+      Handler: index.handler
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Runtime: python3.8
+      Timeout: 90  # Increase this value (in seconds) as needed
+      MemorySize: 256  # Increase this value (in MB) as needed
+      Code:
+        ZipFile: |
+          import boto3
+          import json
+
+          def handler(event, context):
+              ec2 = boto3.client('ec2')
+              
+              response = ec2.run_instances(
+                  LaunchTemplate={
+                      'LaunchTemplateName': 'GrowthSignalsLaunchTemplate',
+                      'Version': '$Latest'
+                  },
+                  MinCount=1,
+                  MaxCount=1
+              )
+              
+              instance_id = response['Instances'][0]['InstanceId']
+              return {
+                  'statusCode': 200,
+                  'body': json.dumps(f"EC2 instance {instance_id} launched successfully")
+              }
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: AllowEC2Launch
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - ec2:RunInstances
+                  - ec2:CreateTags
+                  - ec2:DescribeInstances
+                Resource: '*'
+

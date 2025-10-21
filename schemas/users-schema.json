@@ -1,0 +1,39 @@
+{
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "long",
+      "required": true
+    },
+    {
+      "name": "username",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "created_at",
+      "type": "timestamp",
+      "required": true
+    },
+    {
+      "name": "last_login",
+      "type": "timestamp",
+      "required": false
+    },
+    {
+      "name": "is_active",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "name": "profile_data",
+      "type": "string",
+      "required": false
+    }
+  ]
+} 

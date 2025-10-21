@@ -1,0 +1,255 @@
+﻿Cat,Description,group
+IAB11,Law Government and Politics,iab
+IAB7-1,Exercise,iab
+IAB7-44,Weight Loss,iab
+IAB7-15,Cold and Flu,iab
+IAB7-19,Dermatology,iab
+IAB7-25,Herbs for Health,iab
+IAB7-31,Mens Health,iab
+IAB7-32,Nutrition,iab
+IAB7-38,Senior Health,iab
+IAB7-4,Allergies,iab
+IAB7-41,Smoking Cessation,iab
+IAB7-45,Womens Health,iab
+IAB7-5,Alternative Medicine,iab
+IAB7-5,Holistic Healing,iab
+IAB17-37,Surfing/Bodyboarding,iab
+IAB13-9,Options,iab
+IAB10,Home & Garden,iab
+IAB4,Careers,iab
+IAB17-12,Football,iab
+IAB17-5,Boxing,iab
+IAB21,Real Estate,iab
+IAB5,Education,iab
+IAB17-33,Scuba Diving,iab
+IAB17-3,Bicycling,iab
+IAB6-2,Babies & Toddlers,iab
+IAB14,Society,iab
+IAB17-8,Climbing,iab
+IAB21-1,Apartments,iab
+IAB17-27,Pro Ice Hockey,iab
+IAB2,Automotive,iab
+IAB6-3,Daycare/Pre School,iab
+IAB5-10,Homeschooling,iab
+IAB5-7,English as a 2nd Language,iab
+IAB17-6,Canoeing/Kayaking,iab
+IAB22,Shopping,iab
+IAB8,Food & Drink,iab
+IAB17-13,Freshwater Fishing,iab
+IAB17-15,Golf,iab
+IAB13-4,Financial Planning,iab
+IAB17-10,Figure Skating,iab
+IAB19,Technology & Computing,iab
+IAB17-44,World Soccer,iab
+IAB13-2,Credit/Debt & Loans,iab
+IAB2-3,Buying/Selling Cars,iab
+IAB17-39,Table Tennis/Ping-Pong,iab
+IAB17-24,Paintball,iab
+IAB13-7,Investing,iab
+IAB17-29,Rugby,iab
+IAB6-4,Family Internet,iab
+IAB4-7,Nursing,iab
+IAB13-11,Stocks,iab
+IAB17-22,NASCAR Racing,iab
+IAB14-1,Dating,iab
+IAB10-5,Home Repair,iab
+IAB21-3,Buying/Selling Homes,iab
+IAB17-16,Horse Racing,iab
+IAB13-5,Hedge Fund,iab
+IAB17,Sports,iab
+IAB18,Style & Fashion,iab
+IAB15,Science,iab
+IAB17-34,Skateboarding,iab
+IAB17-11,Fly Fishing,iab
+IAB13-12,Tax Planning,iab
+IAB17-38,Swimming,iab
+IAB17-26,Pro Basketball,iab
+IAB13-3,Financial News,iab
+IAB13-10,Retirement Planning,iab
+IAB17-31,Sailing,iab
+IAB17-43,Waterski/Wakeboard,iab
+IAB17-40,Tennis,iab
+IAB17-42,Walking,iab
+IAB1,Arts & Entertainment,iab
+IAB14-4,Marriage,iab
+IAB16,Pets,iab
+IAB4-4,Job Fairs,iab
+IAB17-4,Bodybuilding,iab
+IAB17-17,Horses,iab
+IAB6-5,Parenting - K-6 Kids,iab
+IAB17-19,Inline Skating,iab
+IAB17-32,Saltwater Fishing,iab
+IAB14-2,Divorce Support,iab
+IAB17-14,Game & Fish,iab
+IAB2-16,Off-Road Vehicles,iab
+IAB17-25,Power & Motorcycles,iab
+IAB13-6,Insurance,iab
+IAB17-20,Martial Arts,iab
+IAB2-15,Mororcycles,iab
+IAB3-5,Construction,iab
+IAB17-35,Skiing,iab
+IAB7,Health & Fitness,iab
+IAB20,Travel,iab
+IAB17-36,Snowboarding,iab
+IAB13,Personal Finance,iab
+IAB17-23,Olympics,iab
+IAB17-30,Running/Jogging,iab
+IAB10-9,Remodeling & Construction,iab
+IAB17-18,Hunting/Shooting,iab
+IAB3,Business,iab
+IAB17-2,Baseball,iab
+IAB14-7,Weddings,iab
+IAB4-5,Job Search,iab
+IAB2-2,Auto Repair,iab
+IAB10-8,Landscaping,iab
+IAB17-21,Mountain Biking,iab
+IAB17-41,Volleyball,iab
+IAB4-10,U.S. Military,iab
+IAB17-28,Rodeo,iab
+IAB13-8,Mutual Funds,iab
+IAB12,News,iab
+IAB17-1,Auto Racing,iab
+IAB9,Hobbies & Interests,iab
+IAB5-13,Private School,iab
+IAB14-5,Senior Living,iab
+IAB6,Family & Parenting,iab
+IAB17-9,Cricket,iab
+IAB17-7,Cheerleading,iab
+IAB13-1,Beginning Investing,iab
+IAB3-Farm,Farming,lbd1
+IAB7-VD,Vegetarian Diet,lbd1
+IAB7-SaM,Spa and Massage,lbd1
+IAB1-ABC,ABC,lbd1
+IAB1-CBS2,CBS,lbd1
+IAB1-ESPN1,ESPN,lbd1
+IAB1-FOX,Fox,lbd1
+IAB1-FX,FX,lbd1
+IAB1-HBO,HBO,lbd1
+IAB1-NBC,NBC,lbd1
+IAB1-OWN,OWN,lbd1
+IAB1-Show,Showtime,lbd1
+IAB1-Starz,Starz,lbd1
+IAB1-TBS,TBS,lbd1
+IAB1-APTV,Apple TV,lbd1
+IAB1-DisPlus,Disney Plus,lbd1
+IAB3-Recruit,Recruiters,lbd1
+IAB3-RemW,Remote Work,lbd1
+IAB13-FinS,Financial Services,lbd1
+IAB13-HIns,Health Insurance,lbd1
+IAB13-LI,Life Insurance,lbd1
+IAB13-PfR,Planning for Retirement,lbd1
+IAB13-REI,Real Estate Investor,lbd1
+IAB4-Carr,Careers,lbd1
+IAB4-Job,Job Search,lbd1
+IAB4-RW,Remote Working,lbd1
+IAB4-Ret,Retirement,lbd1
+IAB6-Par,Parenting Teens,lbd1
+IAB6-SL,Senior Living,lbd1
+IAB7-ND,Neurological Disorders,lbd1
+IAB7-CaF,Cold and Flu,lbd1
+IAB7-HI,Hearing Impaired,lbd1
+IAB7-ENa,Ear Nose and Throat,lbd1
+IAB7-ED,Eating Disorders,lbd1
+IAB7-TD,Thyroid Disease,lbd1
+IAB7-EaM,Endocrine and Metabolic Diseases,lbd1
+IAB7-E,Epidemic,lbd1
+IAB7-VI,Vision Impaired,lbd1
+IAB7-ID,Infectious Diseases,lbd1
+IAB7-FAC,First Aid Care,lbd1
+IAB7-IaA,Injuries and Accidents,lbd1
+IAB7-ADD,Attention Deficit Disorder,lbd1
+IAB7-AaA,Autism and Asperger's,lbd1
+IAB7-MHC,Mental Health Conditions,lbd1
+IAB7-SAa,Substance Abuse and Alcoholism,lbd1
+IAB7-DaC,Diseases and Conditions,lbd1
+IAB7-Hosp,Hospital Care,lbd1
+IAB7-H,Healthcare,lbd1
+IAB7-Labs,Labs and Medical Tests,lbd1
+IAB7-Imm,Immunology,lbd1
+IAB7-MR,Medical Research,lbd1
+IAB7-Onc,Oncology,lbd1
+IAB7-Pharm,Pharmacology,lbd1
+IAB7-Phys,Physiology,lbd1
+IAB7-Psyc,Psychology and Psychoanalysis,lbd1
+IAB7-Psyc2,Psychology and Psychiatry,lbd1
+IAB7-PD,Pharmaceutical Drugs,lbd1
+IAB7-Sx,Surgery,lbd1
+IAB7-MH,Medical Health,lbd1
+IAB7-NBS,New Business Startups,lbd1
+IAB13-SB,Stocks & Bonds,lbd1
+IAB13-M,Mortgages,lbd1
+IAB13-S,Student,lbd1
+IAB13-RP,Retirement Planning,lbd1
+IAB21-PreMove,Pre-Movers,lbd1
+IAB2B-1,Banking,lbd1
+IAB2B-2,Business Loans,lbd1
+IAB2B-3,Business Accounting,lbd1
+IAB2B-4,Economic Forecasting,lbd1
+IAB2B-5,Economist,lbd1
+IAB2B-6,Financial Analyst,lbd1
+IAB2B-7,Insurance,lbd1
+IAB2B-8,Investment Banking,lbd1
+IAB2B-9,Wealth Management,lbd1
+IAB2B-12,K-12 Teachers,lbd1
+IAB2B-13,Geriatric Care,lbd1
+IAB2B-14,Medical Practice,lbd1
+IAB2B-15,Public Health,lbd1
+IAB2B-16,Alternative Medicine,lbd1
+IAB2B-17,Dermatology,lbd1
+IAB2B-18,Emergency Medicine,lbd1
+IAB2B-19,Family Medicine,lbd1
+IAB2B-20,Gastroenterology,lbd1
+IAB2B-21,Internal Medicine,lbd1
+IAB2B-22,Neurology,lbd1
+IAB2B-23,Nuclear Medicine,lbd1
+IAB2B-24,Orthopedics,lbd1
+IAB2B-25,Pathology,lbd1
+IAB2B-26,Pediatrics,lbd1
+IAB2B-27,Physical Therapy,lbd1
+IAB2B-28,Podiatry,lbd1
+IAB2B-29,Primary Care,lbd1
+IAB2B-30,Radiology,lbd1
+IAB2B-31,Plastic Surgery,lbd1
+IAB2B-32,Rheumatology,lbd1
+IAB2B-33,Sports Medicine,lbd1
+IAB2B-34,Chinese Medicine,lbd1
+IAB2B-35,Urology,lbd1
+IAB2B-36,Telehealth,lbd1
+IAB2B-37,Ad Blocking,lbd2
+IAB2B-38,Ad Networks,lbd2
+IAB2B-39,Ad Servers,lbd2
+IAB2B-40,Ad Verification,lbd2
+IAB2B-41,Audience Engagement,lbd2
+IAB2B-42,Consent Management Platform,lbd2
+IAB2B-43,Corporate Blogging,lbd2
+IAB2B-44,Corporate Website,lbd2
+IAB2B-45,Crowdsourcing,lbd2
+IAB2B-46,Customer Data Platform (CDP),lbd2
+IAB2B-47,Customer Relationship Management (CRM),lbd2
+IAB2B-48,Data-driven Marketing,lbd2
+IAB2B-49,Digital Media,lbd2
+IAB2B-50,Direct Mail,lbd2
+IAB2B-51,Email Campaign,lbd2
+IAB2B-52,Email Marketing Automation,lbd2
+IAB2B-53,Email Service Providers,lbd2
+IAB2B-54,Engagement Platform,lbd2
+IAB2B-55,Global Email Marketing,lbd2
+IAB2B-56,Internet Marketing,lbd2
+IAB2B-57,Live Content Feed,lbd2
+IAB2B-58,Market Expansion,lbd2
+IAB2B-59,Market Research,lbd2
+IAB2B-60,Marketing Analytics,lbd2
+IAB2B-61,Marketing Campaigns,lbd2
+IAB2B-62,Marketing Communications,lbd2
+IAB2B-63,Marketing Email,lbd2
+IAB2B-64,Marketing Programs,lbd2
+IAB2B-65,Marketing Tools,lbd2
+IAB2B-66,Media Management Systems,lbd2
+IAB2B-67,Media Planning,lbd2
+IAB2B-68,Online Lead Generation,lbd2
+IAB2B-69,Programmatic Buying,lbd2
+IAB2B-70,Real Time Personalization,lbd2
+IAB2B-71,Search Engine Optimization (SEO),lbd2
+IAB2B-72,Social Media Marketing,lbd2
+IAB2B-73,Survey Data,lbd2
+IAB2B-74,Web Banner,lbd2

@@ -1,0 +1,45 @@
+{
+    "tables": [
+        { "file_name": "./data/growth_signals_maps.json", "pool_size": 6, "buf_pages": 200, "cache_mb": 1000, "location_entries": 3000, "use_mmap" : false },
+        { "file_name": "./data/campaigns_maps.json", "pool_size": 6, "buf_pages": 200, "cache_mb": 1000, "location_entries": 3000, "use_mmap" : false },
+        { "file_name": "./data/aiqhh_maps.json", "pool_size": 6, "buf_pages": 200, "cache_mb": 1000, "location_entries": 3000, "use_mmap" : false },
+        { "file_name": "./data/aiqb2b_maps.json", "pool_size": 6, "buf_pages": 200, "cache_mb": 1000, "location_entries": 3000, "use_mmap" : false },
+        { "file_name": "./data/hw_maps.json", "pool_size": 6, "buf_pages": 200, "cache_mb": 1000, "location_entries": 3000, "use_mmap" : false },
+        { "file_name": "./data/geo_maps.json", "pool_size": 8, "exclude_all": true,"buf_pages": 10000, "cache_mb": 1000, "location_entries": 200000, "use_mmap": false },
+        { "file_name": "./data/stir_maps.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 120, "location_entries": 10, "use_mmap": false},
+        { "file_name": "./data/datasegment_wireless_maps.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 120, "location_entries": 10, "use_mmap": false},
+        { "file_name": "./data/st_maps.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 120, "location_entries": 10, "use_mmap": false},
+        { "file_name": "./data/growth_targets_maps.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 120, "location_entries": 10, "use_mmap": false},
+        { "file_name": "./data/stpol_maps.json", "pool_size": 6, "buf_pages": 200, "cache_mb": 1000, "location_entries": 3000, "use_mmap" : false },
+        { "file_name": "./data/cw_heal_maps.json", "pool_size": 2, "buf_pages": 16, "cache_mb": 400, "location_entries": 200, "use_mmap": false},
+        { "file_name": "./data/cw_poli_maps.json", "pool_size": 2, "buf_pages": 16, "cache_mb": 200, "location_entries": 200, "use_mmap": false},
+        { "file_name": "./data/cw_cons_maps.json", "pool_size": 2, "buf_pages": 16, "cache_mb": 200, "location_entries": 200, "use_mmap": false},
+        { "file_name": "./data/cml_maps.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 20, "location_entries": 10, "use_mmap": false},
+        { "file_name": "./data/lsc_maps.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 100, "location_entries": 50, "use_mmap": false},
+        { "file_name": "./data/pd_data_maps.json", "pool_size": 2, "buf_pages": 200, "cache_mb": 400, "location_entries": 75000, "use_mmap": false},
+        { "file_name": "./data/pt_maps.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 20, "location_entries": 5, "use_mmap": false},
+        { "file_name": "./data/horace-mann_maps.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 20, "location_entries": 5, "use_mmap": false},
+        { "file_name": "./data/horace_mann_client_quote_data_maps.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 20, "location_entries": 5, "use_mmap": false},
+        { "file_name": "./data/lead-swami_client-lists_maps.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 20, "location_entries": 5, "use_mmap": false},
+        { "file_name": "/data/query_engine/shared_data/gh.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 200, "location_entries": 1000, "use_mmap": false},
+        { "file_name": "/data/query_engine/shared_data/gv.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 200, "location_entries": 1000, "use_mmap": false},
+        { "file_name": "/data/query_engine/shared_data/pd.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 200, "location_entries": 1000, "use_mmap": false},
+        { "file_name": "/data/query_engine/shared_data/ac.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 200, "location_entries": 1000, "use_mmap": false},
+        { "file_name": "/data/query_engine/shared_data/rokk.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 200, "location_entries": 1000, "use_mmap": false},
+        { "file_name": "/data/query_engine/shared_data/horace-mann.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 200, "location_entries": 1000, "use_mmap": false},
+        { "file_name": "/data/query_engine/shared_data/lead-swami.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 200, "location_entries": 1000, "use_mmap": false},
+        { "file_name": "/data/query_engine/shared_data/beds-by-design.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 200, "location_entries": 1000, "use_mmap": false},
+        { "file_name": "/data/query_engine/shared_data/statefarmbasler.json", "pool_size": 2, "buf_pages": 4, "cache_mb": 200, "location_entries": 1000, "use_mmap": false}
+    ],
+    "schema_dir": "./trees",
+    "geo_indexes": [
+        { "table_node": 0, "file_name": "./data/geo_index.idx" }
+    ],
+    "translations": [ { "from_node": 1, "to_node": 0, "file_name": "./data/pd_data_maps_1_to_0.xlate" }
+    ],
+    "dedupe_indexes": [
+        { "dedupe": "household", "file_name": "./data/dedupe_household.odht", "alg_cutoff": 1000000 },
+        { "dedupe": "address", "file_name": "./data/dedupe_address.odht", "alg_cutoff": 1000000 }
+    ],
+    "cache_mb": 1000
+}

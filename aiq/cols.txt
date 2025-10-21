@@ -1,0 +1,10 @@
+AIQ_HHID
+AIQ_INDID
+SDoH_Access_Caretaker
+SDoH_Access_Med_Facility
+SDoH_Access_Med_Supplies
+SDoH_Health_Actions_Comfort
+SDoH_Health_Literacy
+SDoH_Resource_Aware
+SDoH_Self_Advocate
+SDoH_Total_Health_Actions

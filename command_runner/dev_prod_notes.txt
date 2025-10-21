@@ -1,0 +1,18 @@
+Implement dev/prod deployment strategy with minimal stack changes: 
+1. Update CloudFormation template (command_runner.yaml):
+  - Add Environment parameter (dev/prod)
+  - Add Mappings section for environment-specific values (log retention, instance defaults)
+  - Parameterize hardcoded values (security groups, EFS, SNS topic)
+  - Update resource names to include environment suffix
+2. Create Secrets Manager configurations:
+  - command-runner-dev-config with dev infrastructure IDs
+  - command-runner-prod-config with prod infrastructure IDs
+3. Create unified deploy script (command_runner_deploy_env.sh):
+  - Accept environment argument (dev/prod)
+  - Fetch appropriate secret from Secrets Manager
+  - Pass environment and all parameters to CloudFormation
+  - Deploy to environment-specific stack name
+4. Test deployment:
+  - Deploy dev stack first to validate changes
+  - Verify resource isolation and naming
+  - Deploy prod stack if dev successful

@@ -1,0 +1,21 @@
+{
+  "id": "intent-signals",
+  "label": "Growth-Signals",
+  "description": "Individual intent data sourced daily from online web traffic",
+  "tags": {
+    "default_royalty": [
+      "STIRISTA-INTENT"
+    ]
+  },
+  "node": 0,
+  "parent": null,
+  "selects": [
+    {
+      "id": "ALL",
+      "label": "ALL",
+      "description": "",
+      "tags": null,
+      "type": "select-all"
+    }
+  ]
+}

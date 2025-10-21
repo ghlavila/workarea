@@ -1,0 +1,1957 @@
+{
+  "id": "growth-signals",
+  "label": "Growth Signals",
+  "description": "Individual intent data sourced daily from online web traffic",
+  "tags": {
+    "default_royalty": [
+      "GRSIG"
+    ]
+  },
+  "node": 0,
+  "parent": null,
+  "selects": [
+    {
+      "id": "ALL",
+      "label": "ALL",
+      "description": "",
+      "tags": null,
+      "type": "select-all"
+    },
+    {
+      "id": "IAB13-6",
+      "label": "Insurance",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-6$"
+      ]
+    },
+    {
+      "id": "IAB14-2",
+      "label": "Divorce Support",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB14-2$"
+      ]
+    },
+    {
+      "id": "IAB14-4",
+      "label": "Marriage",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB14-4$"
+      ]
+    },
+    {
+      "id": "IAB14-5",
+      "label": "Senior Living",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB14-5$"
+      ]
+    },
+    {
+      "id": "IAB14-7",
+      "label": "Weddings",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB14-7$"
+      ]
+    },
+    {
+      "id": "IAB18-1",
+      "label": "Beauty",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB18-1$"
+      ]
+    },
+    {
+      "id": "IAB18-2",
+      "label": "Body Art",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB18-2$"
+      ]
+    },
+    {
+      "id": "IAB19-6",
+      "label": "Cell Phones",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB19-6$"
+      ]
+    },
+    {
+      "id": "IAB20-17",
+      "label": "Honeymoons/Getaways",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB20-17$"
+      ]
+    },
+    {
+      "id": "IAB20-24",
+      "label": "Spas",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB20-24$"
+      ]
+    },
+    {
+      "id": "IAB4-4",
+      "label": "Job Fairs",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB4-4$"
+      ]
+    },
+    {
+      "id": "IAB4-5",
+      "label": "Job Search",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB4-5$"
+      ]
+    },
+    {
+      "id": "IAB4-7",
+      "label": "Nursing",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB4-7$"
+      ]
+    },
+    {
+      "id": "IAB6-2",
+      "label": "Babies & Toddlers",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-2$"
+      ]
+    },
+    {
+      "id": "IAB6-3",
+      "label": "Daycare/Pre School",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-3$"
+      ]
+    },
+    {
+      "id": "IAB6-4",
+      "label": "Family Internet",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-4$"
+      ]
+    },
+    {
+      "id": "IAB6-5",
+      "label": "Parenting - K-6 Kids",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-5$"
+      ]
+    },
+    {
+      "id": "IAB6-6",
+      "label": "Parenting teens",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-6$"
+      ]
+    },
+    {
+      "id": "IAB6-7",
+      "label": "Pregnancy",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-7$"
+      ]
+    },
+    {
+      "id": "IAB6-8",
+      "label": "Special Needs Kids",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-8$"
+      ]
+    },
+    {
+      "id": "IAB6-9",
+      "label": "Eldercare",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-9$"
+      ]
+    },
+    {
+      "id": "IAB7-1",
+      "label": "Exercise",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-1$"
+      ]
+    },
+    {
+      "id": "IAB7-10",
+      "label": "Brain Tumor",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-10$"
+      ]
+    },
+    {
+      "id": "IAB7-11",
+      "label": "Cancer",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-11$"
+      ]
+    },
+    {
+      "id": "IAB7-12",
+      "label": "Cholesterol",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-12$"
+      ]
+    },
+    {
+      "id": "IAB7-13",
+      "label": "Chronic Fatigue Syndrome",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-13$"
+      ]
+    },
+    {
+      "id": "IAB7-14",
+      "label": "Chronic Pain",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-14$"
+      ]
+    },
+    {
+      "id": "IAB7-15",
+      "label": "Cold & Flu",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-15$"
+      ]
+    },
+    {
+      "id": "IAB7-16",
+      "label": "Deafness",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-16$"
+      ]
+    },
+    {
+      "id": "IAB7-17",
+      "label": "Dental Care",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-17$"
+      ]
+    },
+    {
+      "id": "IAB7-18",
+      "label": "Depression",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-18$"
+      ]
+    },
+    {
+      "id": "IAB7-19",
+      "label": "Dermatology",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-19$"
+      ]
+    },
+    {
+      "id": "IAB7-2",
+      "label": "ADD",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-2$"
+      ]
+    },
+    {
+      "id": "IAB7-20",
+      "label": "Diabetes",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-20$"
+      ]
+    },
+    {
+      "id": "IAB7-21",
+      "label": "Epilepsy",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-21$"
+      ]
+    },
+    {
+      "id": "IAB7-22",
+      "label": "GERD/Acid Reflux",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-22$"
+      ]
+    },
+    {
+      "id": "IAB7-23",
+      "label": "Headaches/Migraines",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-23$"
+      ]
+    },
+    {
+      "id": "IAB7-24",
+      "label": "Heart Disease",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-24$"
+      ]
+    },
+    {
+      "id": "IAB7-25",
+      "label": "Herbs for Health",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-25$"
+      ]
+    },
+    {
+      "id": "IAB7-26",
+      "label": "Holistic Healing",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-26$"
+      ]
+    },
+    {
+      "id": "IAB7-27",
+      "label": "IBS/Crohn's Disease",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-27$"
+      ]
+    },
+    {
+      "id": "IAB7-29",
+      "label": "Incontinence",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-29$"
+      ]
+    },
+    {
+      "id": "IAB7-30",
+      "label": "Infertility",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-30$"
+      ]
+    },
+    {
+      "id": "IAB7-31",
+      "label": "Men's Health",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-31$"
+      ]
+    },
+    {
+      "id": "IAB7-32",
+      "label": "Nutrition",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-32$"
+      ]
+    },
+    {
+      "id": "IAB7-33",
+      "label": "Orthopedics",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-33$"
+      ]
+    },
+    {
+      "id": "IAB7-34",
+      "label": "Panic/Anxiety Disorders",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-34$"
+      ]
+    },
+    {
+      "id": "IAB7-35",
+      "label": "Pediatrics",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-35$"
+      ]
+    },
+    {
+      "id": "IAB7-36",
+      "label": "Physical Therapy",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-36$"
+      ]
+    },
+    {
+      "id": "IAB7-37",
+      "label": "Psychology/Psychiatry",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-37$"
+      ]
+    },
+    {
+      "id": "IAB7-38",
+      "label": "Senior Health",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-38$"
+      ]
+    },
+    {
+      "id": "IAB7-4",
+      "label": "Allergies",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-4$"
+      ]
+    },
+    {
+      "id": "IAB7-40",
+      "label": "Sleep Disorders",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-40$"
+      ]
+    },
+    {
+      "id": "IAB7-41",
+      "label": "Smoking Cessation",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-41$"
+      ]
+    },
+    {
+      "id": "IAB7-42",
+      "label": "Substance Abuse",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-42$"
+      ]
+    },
+    {
+      "id": "IAB7-43",
+      "label": "Thyroid Disease",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-43$"
+      ]
+    },
+    {
+      "id": "IAB7-44",
+      "label": "Weight Loss",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-44$"
+      ]
+    },
+    {
+      "id": "IAB7-45",
+      "label": "Women's Health",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-45$"
+      ]
+    },
+    {
+      "id": "IAB7-5",
+      "label": "Alternative Medicine",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-5$"
+      ]
+    },
+    {
+      "id": "IAB7-6",
+      "label": "Arthritis",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-6$"
+      ]
+    },
+    {
+      "id": "IAB7-7",
+      "label": "Asthma",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-7$"
+      ]
+    },
+    {
+      "id": "IAB7-8",
+      "label": "Autism/PDD",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-8$"
+      ]
+    },
+    {
+      "id": "IAB7-9",
+      "label": "Bipolar Disorder",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-9$"
+      ]
+    },
+    {
+      "id": "IAB13-6_Insurance_Auto",
+      "label": "Insurance Keyword: Auto",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-6_Insurance_Auto$"
+      ]
+    },
+    {
+      "id": "IAB13-6_Insurance_Commercial",
+      "label": "Insurance Keyword: Commercial",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-6_Insurance_Commercial$"
+      ]
+    },
+    {
+      "id": "IAB13-6_Insurance_Home",
+      "label": "Insurance Keyword: Home",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-6_Insurance_Home$"
+      ]
+    },
+    {
+      "id": "IAB13-6_Insurance_Life",
+      "label": "Insurance Keyword: Life",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-6_Insurance_Life$"
+      ]
+    },
+    {
+      "id": "IAB13-6_Insurance_Medicare",
+      "label": "Insurance Keyword: Medicare",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-6_Insurance_Medicare$"
+      ]
+    },
+    {
+      "id": "IAB13-6_Insurance_Motorcycle",
+      "label": "Insurance Keyword: Motorcycle",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-6_Insurance_Motorcycle$"
+      ]
+    },
+    {
+      "id": "IAB13-6_Insurance_Progressive",
+      "label": "Insurance Keyword: Progressive",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-6_Insurance_Progressive$"
+      ]
+    },
+    {
+      "id": "IAB13-10",
+      "label": "Retirement Planning",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-10$"
+      ]
+    },
+    {
+      "id": "IAB13-12",
+      "label": "Tax Planning",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-12$"
+      ]
+    },
+    {
+      "id": "IAB13-4",
+      "label": "Financial Planning",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-4$"
+      ]
+    },
+    {
+      "id": "IAB13-7",
+      "label": "Investing",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-7$"
+      ]
+    },
+    {
+      "id": "IAB13-6_Insurance_Pet",
+      "label": "Insurance Keyword: Pet",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-6_Insurance_Pet$"
+      ]
+    },
+    {
+      "id": "IAB13-6_Insurance_Health",
+      "label": "Insurance Keyword: Health",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-6_Insurance_Health$"
+      ]
+    },
+    {
+      "id": "IAB2_Auto_Loans",
+      "label": "Buying Selling Cars \u2013 Auto Loans",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB2_Auto_Loans$"
+      ]
+    },
+    {
+      "id": "IAB7-24_Stroke",
+      "label": "Heart Disease \u2013 Stroke",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-24_Stroke$"
+      ]
+    },
+    {
+      "id": "IAB7-30_Testosterone",
+      "label": "Infertility - Testosterone",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-30_Testosterone$"
+      ]
+    },
+    {
+      "id": "IAB7-31_Testosterone",
+      "label": "Men\u2019s Health - Testosterone",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-31_Testosterone$"
+      ]
+    },
+    {
+      "id": "IAB7-39_Testosterone",
+      "label": "Sexuality \u2013 Testosteron",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-39_Testosterone$"
+      ]
+    },
+    {
+      "id": "IAB7-44_GLP-1",
+      "label": "Weight Loss \u2013 GLP-1",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-44_GLP-1$"
+      ]
+    },
+    {
+      "id": "IAB7_Colonoscopy",
+      "label": "Colonscopy",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7_Colonoscopy$"
+      ]
+    },
+    {
+      "id": "IAB7-11_Skin_Cancer",
+      "label": "Skin Cancer",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-11_Skin_Cancer$"
+      ]
+    },
+    {
+      "id": "IAB7-19_Dermatology",
+      "label": "Keyword: Dermatology",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-19_Dermatology$"
+      ]
+    },
+    {
+      "id": "IAB7-24_Heart_Disease",
+      "label": "Heart Disease",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-24_Heart_Disease$"
+      ]
+    },
+    {
+      "id": "IAB7-31_IAB7-45_Hormone_Replacement_Therapy",
+      "label": "Hormone Replacement Therapy",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-31_IAB7-45_Hormone_Replacement_Therapy$"
+      ]
+    },
+    {
+      "id": "IAB7-33_Orthopedics",
+      "label": "Orthopedics",
+      "description": "",
+      "tags": {
+        "field-hint": "date"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-33_Orthopedics$"
+      ]
+    }
+  ]
+}

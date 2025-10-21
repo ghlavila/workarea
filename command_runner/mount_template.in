@@ -1,0 +1,30 @@
+
+            # Write systemd unit to mount an S3 bucket via Mountpoint
+            cat <<'EOF' >/etc/systemd/system/s3bucket-gh-prod-cdc-__CLIENT-ID__.service
+            [Unit]
+            Description=Mount S3 bucket gh-prod-cdc-__CLIENT-ID__ 
+            After=network-online.target
+            Wants=network-online.target
+            
+            [Service]
+            Type=simple
+            ExecStart=/usr/bin/mount-s3 gh-prod-cdc-__CLIENT-ID__ /gh_prod_cdc___CLIENT-ID__
+                --foreground \
+                --log-directory /data/s3logs \
+                --allow-other \
+                --allow-overwrite \
+                --allow-delete \
+                --part-size 100000000 \
+                --gid 10 \
+                --dir-mode 770 \
+                --file-mode 770
+            ExecStop=/bin/fusermount -u /gh_prod_cdc___CLIENT-ID__
+            Restart=on-failure
+            RestartSec=5
+            
+            [Install]
+            WantedBy=multi-user.target
+            EOF
+
+            systemctl daemon-reload
+            systemctl enable --now s3bucket-gh-prod-cdc-__CLIENT-ID__.service

@@ -1,0 +1,493 @@
+#!/usr/bin/env python3
+"""
+Script to generate additional random rows for CSV data based on category counts.
+
+Usage: 
+  Single date: python make_it_happen.py --trigger_date CCYYMMDD input_file.csv
+  Date range:  python make_it_happen.py --trigger_date CCYYMMDD-CCYYMMDD input_file.csv
+  With custom mpid pool: python make_it_happen.py --trigger_date CCYYMMDD --mpid-pool file1.csv file2.csv input_file.csv
+
+The input_file is used for category analysis.
+By default, uses intent_triggers_202506*.csv files for mpid pool.
+Use --mpid-pool to specify custom files for mpid universe selection.
+Output files are named: randomly_generated_CCYYMMDD.txt
+"""
+
+import argparse
+import csv
+import random
+import sys
+import glob
+from collections import defaultdict
+from pathlib import Path
+from datetime import datetime, timedelta
+
+
+def read_csv_data(input_file):
+    """Read CSV data and return rows for category analysis."""
+    rows = []
+    
+    try:
+        with open(input_file, 'r', newline='', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                rows.append(row)
+    except FileNotFoundError:
+        print(f"Error: File '{input_file}' not found.")
+        sys.exit(1)
+    except Exception as e:
+        print(f"Error reading file: {e}")
+        sys.exit(1)
+    
+    return rows
+
+
+def read_mpid_pool(mpid_pool_files):
+    """Read mpid values from pre-built unique mpid file(s) to create the selection pool."""
+    import gc
+    
+    print("🚀 Reading ALL mpids from file(s)")
+    
+    unique_mpids = []
+    total_mpids_seen = 0
+    
+    for file_path in mpid_pool_files:
+        print(f"Reading unique mpids from: {file_path}")
+        print("Reading ALL mpids - OPTIMIZED BULK READ")
+        
+        try:
+            with open(file_path, 'r', newline='', encoding='utf-8') as f:
+                # Read header to get column index
+                header_line = f.readline().strip()
+                if not header_line:
+                    print(f"Error: Empty file {file_path}")
+                    continue
+                
+                # Handle quoted CSV headers
+                headers = [h.strip().strip('"').strip("'") for h in header_line.split(',')]
+                print(f"    📋 Available columns: {headers}")
+                
+                # Try to find mpid column (case insensitive and flexible)
+                mpid_col_index = -1
+                for i, header in enumerate(headers):
+                    header_clean = header.strip().lower()
+                    if header_clean in ['mpid', 'mp_id', 'id', 'mpids']:
+                        mpid_col_index = i
+                        print(f"    🎯 Found mpid-like column '{header}' at index {i}")
+                        break
+                
+                if mpid_col_index == -1:
+                    print(f"Error: No mpid-like column found in {file_path}")
+                    print(f"Available columns: {headers}")
+                    continue
+                
+                print(f"    🚀 Found mpid column at index {mpid_col_index}, starting optimized read...")
+                
+                # OPTIMIZED: Read in chunks and process in batches
+                batch_size = 100000  # Process 100K rows at a time
+                batch_mpids = []
+                progress_counter = 0
+                
+                while True:
+                    # Read a batch of lines
+                    batch_lines = []
+                    for _ in range(batch_size):
+                        line = f.readline()
+                        if not line:
+                            break
+                        batch_lines.append(line.strip())
+                    
+                    if not batch_lines:
+                        break  # End of file
+                    
+                    # Process batch efficiently
+                    for line in batch_lines:
+                        if not line:
+                            continue
+                        
+                        parts = line.split(',')
+                        if len(parts) > mpid_col_index:
+                            total_mpids_seen += 1
+                            
+                            # Handle quoted values
+                            mpid_value = parts[mpid_col_index].strip().strip('"').strip("'")
+                            if mpid_value:  # Only add non-empty values
+                                batch_mpids.append(mpid_value)
+                    
+                    # Add batch to main list (bulk operation)
+                    unique_mpids.extend(batch_mpids)
+                    batch_mpids = []  # Clear for next batch
+                    
+                    # Progress reporting (less frequent for speed)
+                    progress_counter += len(batch_lines)
+                    if progress_counter >= 5000000:  # Every 5M rows instead of 1M
+                        print(f"    📊 Scanned {total_mpids_seen:,} mpids, loaded {len(unique_mpids):,}")
+                        progress_counter = 0
+                
+                print(f"  ✅ Loaded {len(unique_mpids):,} unique mpids from {total_mpids_seen:,} total")
+                    
+        except FileNotFoundError:
+            print(f"Error: File '{file_path}' not found.")
+            sys.exit(1)
+        except Exception as e:
+            print(f"Error reading file '{file_path}': {e}")
+            sys.exit(1)
+    
+    # Force garbage collection to free memory from file reading
+    gc.collect()
+    
+    # Use the full universe - no working set limitations
+    working_mpids = unique_mpids
+    print(f"  🚀 Using FULL mpid universe for selection")
+    
+    # Convert to set for O(1) lookups instead of O(n) list operations
+    working_mpids_set = set(working_mpids)
+    
+    print(f"  ⚡ Working set size: {len(working_mpids):,} mpids for generation")
+    
+    print(f"\n📋 Mpid Pool Summary:")
+    print(f"  Total mpids in file: ~{total_mpids_seen:,}")
+    print(f"  All mpids loaded: {len(unique_mpids):,}")
+    print(f"  Mode: FULL UNIVERSE - Using complete mpid universe")
+    print(f"  Available for selection: {len(working_mpids):,} (FULL UNIVERSE)")
+    print(f"  Memory usage: ~{len(unique_mpids) * 50 / 1024 / 1024:.1f} MB")
+    
+    return working_mpids, working_mpids_set, len(unique_mpids)
+
+
+def count_categories(rows):
+    """Count occurrences of each category."""
+    category_counts = defaultdict(int)
+    for row in rows:
+        category_counts[row['category']] += 1
+    return category_counts
+
+
+def generate_final_rows(rows, all_mpids, working_mpids_set, category_counts, trigger_date):
+    """Generate the final dataset with random mpid selection for each category."""
+    import random
+    from collections import defaultdict
+    
+    # Realistic baseline volumes for IAB7 health categories based on US health statistics
+    # These are monthly baseline volumes that reflect real-world interest patterns
+    realistic_health_baselines = {
+        'IAB7': 850000,                    # General Health & Fitness - broad appeal
+        'IAB7-1': 320000,                  # Exercise - high interest, fitness culture
+        'IAB7-2': 45000,                   # ADD/ADHD - 6.1 million children + adults
+        'IAB7-4': 180000,                  # Allergies - 50+ million Americans affected
+        'IAB7-5': 95000,                   # Alternative Medicine - growing interest
+        'IAB7-6': 110000,                  # Arthritis - 53.2 million adults (1 in 5)
+        'IAB7-7': 85000,                   # Asthma - 25 million Americans
+        'IAB7-8': 35000,                   # Autism/PDD - specialized population
+        'IAB7-9': 65000,                   # Bipolar Disorder - 2.8% of adults
+        'IAB7-10': 25000,                  # Brain Tumor - rare but serious
+        'IAB7-11': 450000,                 # Cancer - 1.7M new cases annually, major concern
+        'IAB7-12': 220000,                 # Cholesterol - very common health issue
+        'IAB7-13': 40000,                  # Chronic Fatigue Syndrome - underdiagnosed
+        'IAB7-14': 280000,                 # Chronic Pain - widespread issue
+        'IAB7-15': 150000,                 # Cold & Flu - seasonal but universal
+        'IAB7-16': 55000,                  # Deafness - significant population
+        'IAB7-17': 380000,                 # Dental Care - universal need, high search
+        'IAB7-18': 420000,                 # Depression - 21M adults, high awareness
+        'IAB7-19': 190000,                 # Dermatology - common skin concerns
+        'IAB7-20': 520000,                 # Diabetes - 38.4M Americans, major health issue
+        'IAB7-21': 60000,                  # Epilepsy - 3.4M Americans
+        'IAB7-22': 75000,                  # GERD/Acid Reflux - very common
+        'IAB7-23': 160000,                 # Headaches/Migraines - frequent searches
+        'IAB7-24': 480000,                 # Heart Disease - #1 killer, high concern
+        'IAB7-25': 70000,                  # Herbs for Health - niche but growing
+        'IAB7-26': 85000,                  # Holistic Healing - alternative health trend
+        'IAB7-27': 90000,                  # IBS/Crohn's Disease - digestive health
+        'IAB7-29': 45000,                  # Incontinence - underreported condition
+        'IAB7-30': 120000,                 # Infertility - affects 1 in 8 couples
+        'IAB7-31': 200000,                 # Men's Health - targeted health concerns
+        'IAB7-32': 350000,                 # Nutrition - very high interest, wellness trend
+        'IAB7-33': 130000,                 # Orthopedics - bone/joint health
+        'IAB7-34': 380000,                 # Panic/Anxiety Disorders - 40M+ adults
+        'IAB7-35': 240000,                 # Pediatrics - children's health
+        'IAB7-36': 110000,                 # Physical Therapy - rehabilitation needs
+        'IAB7-37': 290000,                 # Psychology/Psychiatry - mental health services
+        'IAB7-38': 180000,                 # Senior Health - aging population
+        'IAB7-40': 140000,                 # Sleep Disorders - increasingly recognized
+        'IAB7-41': 95000,                  # Smoking Cessation - public health priority
+        'IAB7-42': 85000,                  # Substance Abuse - serious but stigmatized
+        'IAB7-43': 75000,                  # Thyroid Disease - affects 20M Americans
+        'IAB7-44': 650000,                 # Weight Loss - massive market, high search
+        'IAB7-45': 280000,                 # Women's Health - targeted health concerns
+        'IAB7_Colonoscopy': 95000,         # Colonoscopy - preventive screening
+        'IAB7-11_Skin_Cancer': 180000,     # Skin Cancer - most common cancer type
+        'IAB7-24_Stroke': 120000,          # Heart Disease – Stroke - serious condition
+        'IAB7-30_Testosterone': 140000,    # Infertility - Testosterone - men's health
+        'IAB7-31_Testosterone': 160000,    # Men's Health - Testosterone - high interest
+        'IAB7-39_Testosterone': 150000,    # Sexuality – Testosterone - men's health
+        'IAB7-44_GLP-1': 220000,          # Weight Loss – GLP-1 - trending treatment
+    }
+    
+    # Special categories with fixed ranges (insurance) or realistic baselines (health)
+    special_categories = {
+        'IAB13-6_Insurance_Auto': (200000, 500000),  # Keep existing insurance ranges
+        'IAB13-6_Insurance_Life': (200000, 500000),  # Keep existing insurance ranges
+    }
+    
+    # Add all IAB7 categories to special_categories with their realistic baselines
+    for category, baseline in realistic_health_baselines.items():
+        # Add wide natural variation around the baseline (±75%)
+        min_val = int(baseline * 0.25)
+        max_val = int(baseline * 1.75)
+        special_categories[category] = (min_val, max_val)
+    
+    category_targets = {}
+    total_rows_needed = 0
+    
+    def generate_dynamic_range(category_name, original_count):
+        """Generate a unique dynamic range for a category based on its name."""
+        import hashlib
+        
+        # Use category name to generate consistent but unique ranges
+        category_hash = int(hashlib.md5(category_name.encode()).hexdigest()[:8], 16)
+        
+        # Generate min growth factor: 30% to 80%
+        min_growth = 0.30 + (category_hash % 51) / 100  # 0.30 to 0.80
+        
+        # Generate max growth factor: 120% to 200%
+        max_growth = 1.20 + ((category_hash >> 8) % 81) / 100  # 1.20 to 2.00
+        
+        # Calculate actual min/max totals
+        min_total = int(original_count * min_growth)
+        max_total = int(original_count * max_growth)
+        
+        return min_total, max_total, min_growth, max_growth
+
+    for category, original_count in category_counts.items():
+        if category in special_categories:
+            range_spec = special_categories[category]
+            if range_spec is None:
+                # Dynamic range generation (this case should not occur now)
+                min_total, max_total, min_growth, max_growth = generate_dynamic_range(category, original_count)
+                target_total = random.randint(min_total, max_total)
+                print(f"Category '{category}': original {original_count} → target {target_total} (dynamic range: {min_growth:.0%}-{max_growth:.0%})")
+            else:
+                # Fixed range or realistic baseline range
+                min_total, max_total = range_spec
+                target_total = random.randint(min_total, max_total)
+                if category in realistic_health_baselines:
+                    baseline = realistic_health_baselines[category]
+                    print(f"Category '{category}': original {original_count} → target {target_total:,} (realistic baseline: {baseline:,} ±75%)")
+                else:
+                    print(f"Category '{category}': original {original_count} → target {target_total} (fixed range)")
+        else:
+            # Standard categories: 50% to 150% of original quantity
+            min_total = int(original_count * 0.5)
+            max_total = int(original_count * 1.5)
+            target_total = random.randint(min_total, max_total)
+            print(f"Category '{category}': original {original_count} → target {target_total} (standard range: 50%-150%)")
+        
+        category_targets[category] = target_total
+        total_rows_needed += target_total
+    
+    print(f"\n🚀 Generating {total_rows_needed:,} total rows with full random selection...")
+    
+    # Convert working set to list for efficient random access
+    working_mpids_list = list(working_mpids_set)
+    mpid_count = len(working_mpids_list)
+    print(f"  ⚡ Working with {mpid_count:,} mpids for selection")
+    
+    # Sort categories by target size (largest first) for better progress reporting
+    sorted_categories = sorted(category_targets.items(), key=lambda x: x[1], reverse=True)
+    
+    print(f"  📊 Each category randomly selects from full {mpid_count:,} mpid universe")
+    print(f"  🎯 Natural overlap expected: ~{(total_rows_needed / mpid_count) * 100:.1f}% based on pool size")
+    
+    # Pre-allocate result list for better memory efficiency
+    final_rows = []
+    
+    for category_idx, (category, target_total) in enumerate(sorted_categories):
+        print(f"    🎯 Category {category_idx+1}/{len(sorted_categories)} '{category}': generating {target_total:,} rows...")
+        
+        # Create unique seed for this category and date combination
+        category_seed = hash(f"{trigger_date}_{category}") % (2**32)
+        random.seed(category_seed)
+        
+        # Randomly sample the entire allocation from the full mpid pool
+        if target_total <= mpid_count:
+            # Sample without replacement from full pool
+            category_mpids = random.sample(working_mpids_list, target_total)
+        else:
+            # Sample with replacement if we need more than the pool size (very unlikely)
+            category_mpids = random.choices(working_mpids_list, k=target_total)
+        
+        print(f"      📈 Randomly selected {len(category_mpids):,} mpids from {mpid_count:,} pool")
+        
+        # Create rows for this category (batch operation)
+        category_rows = [
+            {
+                'category': category,
+                'trigger_date': trigger_date,
+                'mpid': mpid
+            }
+            for mpid in category_mpids
+        ]
+        
+        final_rows.extend(category_rows)
+        
+        print(f"      ✅ Generated {len(category_mpids):,} rows")
+    
+    print(f"\n📊 Full Random Selection Summary:")
+    print(f"  Total rows generated: {len(final_rows):,}")
+    print(f"  Selection pool size: {mpid_count:,} mpids")
+    print(f"  Pool utilization: {(total_rows_needed / mpid_count) * 100:.1f}%")
+    print(f"  Natural cross-category overlap: Expected based on random sampling")
+    
+    return final_rows
+
+
+def write_output_file(final_rows, trigger_date, input_file_path):
+    """Write final dataset to output file."""
+    input_path = Path(input_file_path)
+    output_file = input_path.parent / f"randomly_generated_{trigger_date}.txt"
+    
+    try:
+        with open(output_file, 'w', newline='', encoding='utf-8') as f:
+            fieldnames = ['category', 'trigger_date', 'mpid']
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            
+            writer.writeheader()
+            writer.writerows(final_rows)
+        
+        print(f"Output written to: {output_file}")
+        print(f"Total rows: {len(final_rows)}")
+        
+    except Exception as e:
+        print(f"Error writing output file: {e}")
+        sys.exit(1)
+
+
+def validate_date_format(date_str):
+    """Validate single date format (CCYYMMDD)."""
+    if len(date_str) != 8:
+        return False
+    
+    if not date_str.isdigit():
+        return False
+    
+    try:
+        year = int(date_str[:4])
+        month = int(date_str[4:6])
+        day = int(date_str[6:8])
+        
+        # Try to create a datetime object to validate the date
+        datetime(year, month, day)
+        return True
+    except ValueError:
+        return False
+
+
+def validate_trigger_date(date_input):
+    """Validate trigger date format (CCYYMMDD or CCYYMMDD-CCYYMMDD)."""
+    if '-' in date_input:
+        # Date range format
+        parts = date_input.split('-')
+        if len(parts) != 2:
+            raise argparse.ArgumentTypeError("Date range must be in format CCYYMMDD-CCYYMMDD")
+        
+        start_date, end_date = parts
+        if not validate_date_format(start_date):
+            raise argparse.ArgumentTypeError(f"Invalid start date format: {start_date}")
+        if not validate_date_format(end_date):
+            raise argparse.ArgumentTypeError(f"Invalid end date format: {end_date}")
+        
+        # Check that start date is before end date
+        start_dt = datetime.strptime(start_date, '%Y%m%d')
+        end_dt = datetime.strptime(end_date, '%Y%m%d')
+        if start_dt >= end_dt:
+            raise argparse.ArgumentTypeError("Start date must be before end date")
+        
+        return date_input
+    else:
+        # Single date format
+        if not validate_date_format(date_input):
+            raise argparse.ArgumentTypeError("Single date must be 8 digits (CCYYMMDD) and a valid date")
+        
+        return date_input
+
+
+def generate_date_list(date_input):
+    """Generate list of dates from input (single date or range)."""
+    if '-' in date_input:
+        # Date range
+        start_date, end_date = date_input.split('-')
+        start_dt = datetime.strptime(start_date, '%Y%m%d')
+        end_dt = datetime.strptime(end_date, '%Y%m%d')
+        
+        dates = []
+        current_dt = start_dt
+        while current_dt <= end_dt:
+            dates.append(current_dt.strftime('%Y%m%d'))
+            current_dt += timedelta(days=1)
+        
+        return dates
+    else:
+        # Single date
+        return [date_input]
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Generate additional random rows for CSV data based on category counts"
+    )
+    parser.add_argument(
+        "--trigger_date",
+        type=validate_trigger_date,
+        required=True,
+        help="Trigger date in CCYYMMDD format (e.g., 20250603) or date range CCYYMMDD-CCYYMMDD"
+    )
+    parser.add_argument(
+        "input_file",
+        help="Input CSV file path"
+    )
+    parser.add_argument(
+        "--mpid-pool",
+        default='/gh_prod_cdc_statara/gv/data-proc/growth_signals/st_202506_mpids/st_mpids.csv',
+        help="Path to pre-built unique mpid file (default: st_mpids.csv)"
+    )
+    
+    args = parser.parse_args()
+    
+    print(f"Processing input file: {args.input_file}")
+    print(f"Trigger date input: {args.trigger_date}")
+    
+    # Read input data for category analysis
+    rows = read_csv_data(args.input_file)
+    print(f"Read {len(rows)} rows from input file for category analysis")
+    
+    # Get the first date from the date range to use as sampling seed
+    dates_to_process = generate_date_list(args.trigger_date)
+    first_date = dates_to_process[0]
+    
+    # Read mpid pool from determined files using first date as sampling seed
+    all_mpids, working_mpids_set, total_unique_count = read_mpid_pool([args.mpid_pool])
+    
+    # Count categories
+    category_counts = count_categories(rows)
+    print(f"\nCategory counts:")
+    for category, count in sorted(category_counts.items()):
+        print(f"  {category}: {count}")
+    
+    print(f"\nWill generate files for {len(dates_to_process)} date(s): {', '.join(dates_to_process)}")
+    
+    # Process each date
+    for current_date in dates_to_process:
+        print(f"\n--- Processing date: {current_date} ---")
+        
+        # Generate final dataset with different random seed for each date
+        random.seed(current_date)  # Use date as seed for reproducible but different results per date
+        final_rows = generate_final_rows(rows, all_mpids, working_mpids_set, category_counts, current_date)
+        
+        # Write output file for this date
+        write_output_file(final_rows, current_date, args.input_file)
+    
+    print(f"\n✅ Completed processing {len(dates_to_process)} file(s)")
+
+
+if __name__ == "__main__":
+    main()

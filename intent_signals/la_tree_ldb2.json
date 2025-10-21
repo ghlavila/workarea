@@ -1,0 +1,8 @@
+{
+  "id": "intent-signals",
+  "label": "Growth-Signals",
+  "help_text": "Behavioral intent data sourced daily from internet traffic",
+  "members": [],
+  "default_logic": "and",
+  "tags": null
+}

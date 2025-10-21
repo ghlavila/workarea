@@ -1,0 +1,812 @@
+{
+  "id": "growth-signals",
+  "label": "Growth Signals",
+  "help_text": "Behavioral intent data sourced daily from internet traffic",
+  "members": [
+    {
+      "group": {
+        "id": "IAB2",
+        "label": "Automotive",
+        "help_text": "IAB OpenRTB 2.4 category 2",
+        "members": [
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB2_Auto_Loans",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB4",
+        "label": "Careers",
+        "help_text": "IAB OpenRTB 2.4 category 4",
+        "members": [
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB4-4",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB4-5",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB4-7",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB6",
+        "label": "Family & Parenting",
+        "help_text": "IAB OpenRTB 2.4 category 6",
+        "members": [
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB6-2",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB6-3",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB6-9",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB6-4",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB6-5",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB6-6",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB6-7",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB6-8",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB7",
+        "label": "Health & Fitness",
+        "help_text": "IAB OpenRTB 2.4 category 7",
+        "members": [
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-2",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-4",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-5",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-6",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-7",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-8",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-9",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-10",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-11",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-12",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-13",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-14",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-15",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7_Colonoscopy",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-16",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-17",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-18",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-19",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-20",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-21",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-1",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-22",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-23",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-24_Heart_Disease",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-24_Stroke",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-25",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-26",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-31_IAB7-45_Hormone_Replacement_Therapy",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-27",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-29",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-30",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-30_Testosterone",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-19_Dermatology",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-33_Orthopedics",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-31",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-31_Testosterone",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-32",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-33",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-34",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-35",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-36",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-37",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-38",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-39_Testosterone",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-11_Skin_Cancer",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-40",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-41",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-42",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-43",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-44",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-44_GLP-1",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB7-45",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB13",
+        "label": "Personal Finance",
+        "help_text": "IAB OpenRTB 2.4 category 13",
+        "members": [
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-4",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-6",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-6_Insurance_Auto",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-6_Insurance_Commercial",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13_6_Insurance_Auto_GV",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-6_Insurance_Health",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-6_Insurance_Home",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-6_Insurance_Life",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-6_Insurance_Medicare",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-6_Insurance_Motorcycle",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-6_Insurance_Pet",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-6_Insurance_Progressive",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-7",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-10",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB13-12",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB14",
+        "label": "Society",
+        "help_text": "IAB OpenRTB 2.4 category 14",
+        "members": [
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB14-2",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB14-4",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB14-5",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB14-7",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB18",
+        "label": "Style & Fashion",
+        "help_text": "IAB OpenRTB 2.4 category 18",
+        "members": [
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB18-1",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB18-2",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB19",
+        "label": "Technology & Computing",
+        "help_text": "IAB OpenRTB 2.4 category 19",
+        "members": [
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB19-6",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB20",
+        "label": "Travel",
+        "help_text": "IAB OpenRTB 2.4 category 20",
+        "members": [
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB20-17",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "growth-signals",
+              "select_id": "IAB20-24",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    }
+  ],
+  "default_logic": "and",
+  "tags": null
+}

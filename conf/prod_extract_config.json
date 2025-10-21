@@ -1,0 +1,44 @@
+{
+    "athena_db": "gh_data",
+    "query_engine_url": "wss://backend-dev.growth.health/ws",
+    "api_url": "https://api-dev.growth.health",
+    "config_secret": "rk_test",
+    "config_parameter": "rk_test",
+    "model_binary": "./gh_model/gh_model",
+    "tmp_dir": "./tmp",
+    "sources": [
+        {
+            "id": "pd_dm",
+            "table_name": "pd_master_20250226",
+            "extract_options": {
+                "direct-mail": [ "prefix", "fname", "mname", "lname", "suffix",
+                    "addr1", "pmb", "city", "state", "zip", "zip4", "dpc"
+                    ]
+            }
+        },
+        {
+            "id": "gh_dm",
+            "table_name": "gh_master_20250225",
+            "extract_options": {
+                "direct-mail": [ "prefix", "fname", "mname", "lname", "suffix",
+                    "addr1", "pmb", "city", "state", "zip", "zip4", "dpc"
+                    ]
+            }
+        },
+        {
+            "id": "gh_digital",
+            "table_name": "st_master_20250206",
+            "extract_options": {
+                "digital-id": [ "tara_address_md5" ],
+                "email-id": [ "tara_address_md5" ]
+            }
+        },
+        {
+            "id": "hw",
+            "table_name": "hw_master_20241114",
+            "extract_options": {
+                "model": [ ]
+            }
+        }
+    ]
+}

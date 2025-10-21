@@ -1,0 +1,35 @@
+# Input values required for command execution
+inputs:
+  git_repo: "/sdata/opt/command-runner/code"
+  
+# Parameters built from inputs
+parameters:
+  s3bucket: "gh-prod-cdc-{client_id}"
+
+tasks:
+  mount_client_bucket:
+    - description: "Mount buckets"
+      enabled: true
+      command: "{git_repo}/scripts/mount_buckets.sh {s3bucket}"
+  setup_cass_ncoa_enviroment:
+    - description: "Load CASS to memory"
+      enabled: true
+      command: "sudo {git_repo}/scripts/cass_ramdisk.sh"
+    - description: "cp NCOA data to nvme drive"
+      enabled: true
+      command: "sudo rsync -avr /data/ncoa/ /sdata/ncoa/"
+  cass_ncoa_geocode:
+    - description: "Run CASS/NCOA and GEO CODE"
+      enabled: true
+      command: "command_runner_dp_tool.py -c {client_id} -t {table} -cs causeway -r {run_date} -s3 {s3bucket} -j st_cass_ncoa_geo_mpi.json --stdin 'unzip -p -q /gh_prod_cdc_statara/gv/data-proc/st/{run_date}/in/*.gz'"
+  mpi_process:
+    - description: "Match to MPI master"
+      enabled: true
+      command: "{git_repo}/command_runner/scripts/mpi_match.sh -r {run_date} -e 270000000 -b {s3bucket} -t {table}"
+    - description: "Get the MPID"
+      enabled: true
+      command: "command_runner_dp_tool.py -c {client_id} -t {table} -r {run_date} -s3 {s3bucket} -j cw_get_mpid.json"
+  build_bitmaps:
+    - description: "xfilter run - ST Digital bitmaps"
+      enabled: true
+      command: "command_runner_dp_tool.py -c {client_id} -t {table} -r {run_date} -s3 {s3bucket} -j st_xfilter.json -mj cw_heal_maps.json"

@@ -1,0 +1,274 @@
+#!/bin/bash
+
+run_date=$1
+
+# Handle run_date default (today if not provided)
+if [ -z "$run_date" ]; then
+    run_date=$(date +"%Y%m%d")
+else
+    # validate run_date if user provided it
+    if ! [[ $run_date =~ ^[0-9]{8}$ ]]; then
+        echo "Error: run-date must be in YYYYMMDD format"
+        exit 1
+    fi
+fi
+echo "Using run_date: $run_date"
+
+# Source the dependency script
+source /sdata/opt/command-runner/code/scripts/get_latest_table.sh
+# Get the latest st_master table
+st_master=$(get_latest_table "stirista_master" "gh_data")
+echo "Using Stirista master table: $st_master"
+
+# Set up S3 parameters
+dest_bucket=s3://gh-prod-cdc-stirista/gv/xfer/in/LBD_Triggerdata_subscription/$run_date
+junk_bucket=s3://gh-data-proc/athena/output/junk_bucket/
+
+# Check if dest_bucket exists and has data
+if ! aws s3 ls "$dest_bucket/" >/dev/null 2>&1; then
+    echo "Error: No data found in $dest_bucket for date $run_date"
+    exit 1
+fi
+
+execute_command() {
+  local command=("$@")
+  echo "Built command: ${command[@]}"
+  "${command[@]}"
+  if [ $? -ne 0 ]; then
+    echo "Command failed: ${command[@]}"
+    exit 1
+  fi
+}
+
+# all_input 
+todays_data="/gh_prod_cdc_stirista/gv/data-proc/intent_signals/all_input/ldb_intent_triggers_$run_date.test"
+todays_cats="/gh_prod_cdc_stirista/gv/data-proc/ldb_intent_signals/$run_date/logs/intent_categories_$run_date.csv"
+
+# make the logs directory
+make_logs_dir=("mkdir" "-p" "/gh_prod_cdc_stirista/gv/data-proc/ldb_intent_signals/$run_date/logs")
+execute_command "${make_logs_dir[@]}"
+
+############ create table for ldb mappings 
+read -r -d '' query <<EOF
+CREATE EXTERNAL TABLE IF NOT EXISTS ldb_mappings_$run_date
+(
+	segment string,
+	category string,
+	description string
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+LOCATION 's3://gh-prod-cdc-stirista/gv/data-proc/intent_signals/ldb_mappings/'
+TBLPROPERTIES ('classification' = 'csv', 'skip.header.line.count' = '1');
+EOF
+create_command=("aws_tool" "athena" "-d" "gh_build" "-q" "$query" "-l" "$junk_bucket")
+execute_command "${create_command[@]}"
+
+############ create table for that points to todays data
+read -r -d '' query <<EOF
+CREATE EXTERNAL TABLE IF NOT EXISTS ldb_intent_signals_$run_date
+(
+	trigger_date string,
+	zip11 string,
+	segments string
+)
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES ('field.delim' = ',')
+LOCATION '$dest_bucket'
+TBLPROPERTIES ('classification' = 'csv', 'skip.header.line.count' = '1');
+EOF
+create_command=("aws_tool" "athena" "-d" "gh_build" "-q" "$query" "-l" "$junk_bucket")
+execute_command "${create_command[@]}"
+
+##### -- This query transforms rows with multiple segments into one row per segment
+#CREATE TABLE expanded_categories_table
+#WITH (
+#    format = 'PARQUET',
+#    external_location = 's3://gh-prod-cdc-stirista/gv/data-proc/intent_signals/expanded_categories/'
+#)
+#AS
+#SELECT 
+#    trigger_date,
+#    zip11,
+#    trim(t.segment_value) as segments
+#FROM ldb_intent_signals_$run_date
+#CROSS JOIN UNNEST(
+#    split(
+#        regexp_replace(segments, '"', ''), 
+#        ','
+#    )
+#) AS t(segment_value)
+#WHERE trim(t.segment_value) != ''
+#ORDER BY trigger_date, zip11, segments;
+read -r -d '' query <<EOF
+CREATE TABLE ldb_expanded_categories_table_$run_date
+WITH (
+    format = 'PARQUET',
+    external_location = 's3://gh-prod-cdc-stirista/gv/data-proc/intent_signals/expanded_categories/$run_date'
+)
+AS
+WITH aggregated_segments AS (
+    SELECT
+        trigger_date,
+        zip11,
+        array_join(
+            array_distinct(
+                flatten(
+                    array_agg(
+                        split(regexp_replace(segments, '"', ''), ',')
+                    )
+                )
+            ),
+            ','
+        ) as all_segments
+    FROM ldb_intent_signals_$run_date
+    GROUP BY trigger_date, zip11
+)
+SELECT
+    trigger_date,
+    zip11,
+    trim(t.segment_value) as segments
+FROM aggregated_segments
+CROSS JOIN UNNEST(split(all_segments, ',')) AS t(segment_value)
+WHERE trim(t.segment_value) != ''
+ORDER BY trigger_date, zip11, segments;
+EOF
+create_command=("aws_tool" "athena" "-d" "gh_build" "-q" "$query" "-l" "$junk_bucket")
+execute_command "${create_command[@]}"
+
+
+############ get mpid, for today's data [join expanded categories with mappings] 
+# all daily builds will dump to the same dir which will be input to xfilter_build
+#SELECT 
+#    lm.category,
+#    replace(ect.trigger_date, '-','') as trigger_date, 
+#    st.mpid 
+#FROM expanded_categories_table ect
+#LEFT JOIN ldb_mappings_$run_date lm ON SUBSTRING(ect.segments, 3) = lm.segment
+#LEFT JOIN gh_data.$st_master st ON ect.zip11 = st.zip11 
+#WHERE st.zip11 IS NOT NULL AND lm.category IS NOT NULL
+
+read -r -d '' query <<EOF
+  WITH categories_with_mappings AS (
+      SELECT
+          ect.trigger_date,
+          ect.zip11,
+          lm.category
+      FROM ldb_expanded_categories_table_$run_date ect
+      INNER JOIN ldb_mappings_$run_date lm ON SUBSTRING(ect.segments,3) = lm.segment
+  )
+  SELECT
+      cwm.category,
+      replace(cwm.trigger_date, '-','') as trigger_date,
+      st.mpid
+  FROM categories_with_mappings cwm
+  INNER JOIN gh_data.$st_master st ON cwm.zip11 = st.zip11
+EOF
+get_mpid_command=("aws_tool" "athena" "-d" "gh_build" "-q" "$query" "-l" "$junk_bucket" "-o" "$todays_data")
+execute_command "${get_mpid_command[@]}"
+
+
+exit 0
+
+
+
+
+############ update the maps json using the maps from the day before as template starting point 
+# first copy the current maps
+find_previous_maps() {
+    local full_path="$1"
+    local filename=$(basename "$full_path")                    # Get filename
+    local out_dir=$(dirname "$full_path")                     # Get path up to /out
+    local date_dir=$(basename "$(dirname "$out_dir")")        # Get YYYYMMDD
+    local base_path=$(dirname "$(dirname "$out_dir")")        # Get everything before date
+    local day_count=0
+
+    while true; do
+        # Calculate previous day's date
+        date_dir=$(date -d "$date_dir -1 day" +"%Y%m%d")
+        
+        # Construct path maintaining <base_path>/<YYYYMMDD>/out/<filename> structure
+        local target_path="$base_path/$date_dir/out/$filename"
+        
+        # Check if file exists
+        if [ -f "$target_path" ]; then
+            echo "$target_path"
+            return 0
+        fi
+       
+        # Stop after 30 days
+	day_count=$((day_count + 1))
+        if [ $day_count -gt 30 ]; then
+            return 1
+        fi
+    done
+}
+previous_maps=$(find_previous_maps "/gh_prod_cdc_stirista/gv/data-proc/ldb_intent_signals/$run_date/out/ldb_intent_signals_maps.json")
+if [ $? -eq 0 ]; then
+    echo "Found previous maps: $previous_maps"
+else
+    echo "No previous maps found within the last 30 days"
+    exit 1
+fi
+
+# get a list of categories from the mappings table
+read -r -d '' query <<EOF
+SELECT DISTINCT lm.category 
+FROM expanded_categories_table ect
+LEFT JOIN ldb_mappings_$run_date lm ON SUBSTRING(ect.segments, 3) = lm.segment
+WHERE lm.category IS NOT NULL
+ORDER BY lm.category
+EOF
+get_mpid_command=("aws_tool" "athena" "-d" "gh_build" "-q" "$query" "-l" "$junk_bucket" "-o" "$todays_cats")
+execute_command "${get_mpid_command[@]}"
+
+descs="/sdata/opt/command-runner/code/ldb_intent_signals/iab_categories.json"
+new_maps="/gh_prod_cdc_stirista/gv/data-proc/ldb_intent_signals/$run_date/out/ldb_intent_signals_maps.json"
+new_tree="/gh_prod_cdc_stirista/gv/data-proc/ldb_intent_signals/$run_date/out/ldb_intent_signals_tree.json"
+
+update_table_command=(
+  "/sdata/opt/command-runner/code/ldb_intent_signals/modify_table.py"
+  "--maps" "$previous_maps"
+  "--categories" "$todays_cats" 
+  "--descriptions" "$descs" 
+  "--output" "$new_maps" 
+)
+execute_command "${update_table_command[@]}"
+
+############ rebuild the tree json using the updated maps.json 
+rebuild_tree_command=(
+  "/sdata/opt/command-runner/code/ldb_intent_signals/make_tree.py"
+  "--maps" "$new_maps" 
+  "--descriptions" "$descs"
+  "--output" "$new_tree"
+)
+execute_command "${rebuild_tree_command[@]}"
+
+### CLEAN UP STEPS ###
+
+############ drop tableis for this build 
+read -r -d '' query <<EOF
+DROP TABLE ldb_intent_signals_$run_date 
+EOF
+drop_command=("aws_tool" "athena" "-d" "gh_build" "-q" "$query" "-l" "$junk_bucket")
+execute_command "${drop_command[@]}"
+## ldb_mappings
+read -r -d '' query <<EOF
+DROP TABLE ldb_mappings_$run_date 
+EOF
+drop_command=("aws_tool" "athena" "-d" "gh_build" "-q" "$query" "-l" "$junk_bucket")
+execute_command "${drop_command[@]}"
+
+## expanded_categories_table
+read -r -d '' query <<EOF
+DROP TABLE ldb_expanded_categories_table_$run_date 
+EOF
+drop_command=("aws_tool" "athena" "-d" "gh_build" "-q" "$query" "-l" "$junk_bucket")
+execute_command "${drop_command[@]}"
+
+############ cleanup athena junk bucket
+rm_command=("rm" "-f" "$junk_bucket/*")
+execute_command "${rm_command[@]}"
+
+rm_command=("rm" "-f" "/gh_prod_cdc_stirista/gv/data-proc/intent_signals/expanded_categories/$run_date/*")
+#execute_command "${rm_command[@]}"
+

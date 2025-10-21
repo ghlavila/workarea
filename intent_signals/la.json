@@ -1,0 +1,3241 @@
+{
+  "id": "intent-signals",
+  "label": "Growth-Signals",
+  "description": "Individual intent data sourced daily from online web traffic",
+  "tags": {
+    "default_royalty": [
+      "STIRISTA-INTENT"
+    ]
+  },
+  "node": 0,
+  "parent": null,
+  "selects": [
+    {
+      "id": "ALL",
+      "label": "ALL",
+      "description": "",
+      "tags": null,
+      "type": "select-all"
+    },
+    {
+      "id": "stir_IAB1",
+      "label": "- Arts & Entertainment",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1$"
+      ]
+    },
+    {
+      "id": "stir_IAB10",
+      "label": "- Home & Garden",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB10$"
+      ]
+    },
+    {
+      "id": "stir_IAB10-5",
+      "label": "- Home Repair",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB10-5$"
+      ]
+    },
+    {
+      "id": "stir_IAB10-8",
+      "label": "- Landscaping",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB10-8$"
+      ]
+    },
+    {
+      "id": "stir_IAB10-9",
+      "label": "- Remodeling & Construction",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB10-9$"
+      ]
+    },
+    {
+      "id": "stir_IAB11",
+      "label": "- Law Government and Politics",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB11$"
+      ]
+    },
+    {
+      "id": "stir_IAB12",
+      "label": "- News",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB12$"
+      ]
+    },
+    {
+      "id": "stir_IAB13",
+      "label": "- Personal Finance",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-1",
+      "label": "- Beginning Investing",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-1$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-10",
+      "label": "- Retirement Planning",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-10$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-11",
+      "label": "- Stocks",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-11$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-12",
+      "label": "- Tax Planning",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-12$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-2",
+      "label": "- Credit/Debt & Loans",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-2$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-3",
+      "label": "- Financial News",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-3$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-4",
+      "label": "- Financial Planning",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-4$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-5",
+      "label": "- Hedge Fund",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-5$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-6",
+      "label": "- Insurance",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-6$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-7",
+      "label": "- Investing",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-7$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-8",
+      "label": "- Mutual Funds",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-8$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-9",
+      "label": "- Options",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-9$"
+      ]
+    },
+    {
+      "id": "stir_IAB14",
+      "label": "- Society",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB14$"
+      ]
+    },
+    {
+      "id": "stir_IAB14-1",
+      "label": "- Dating",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB14-1$"
+      ]
+    },
+    {
+      "id": "stir_IAB14-2",
+      "label": "- Divorce Support",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB14-2$"
+      ]
+    },
+    {
+      "id": "stir_IAB14-4",
+      "label": "- Marriage",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB14-4$"
+      ]
+    },
+    {
+      "id": "stir_IAB14-5",
+      "label": "- Senior Living",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB14-5$"
+      ]
+    },
+    {
+      "id": "stir_IAB14-7",
+      "label": "- Weddings",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB14-7$"
+      ]
+    },
+    {
+      "id": "stir_IAB15",
+      "label": "- Science",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB15$"
+      ]
+    },
+    {
+      "id": "stir_IAB16",
+      "label": "- Pets",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB16$"
+      ]
+    },
+    {
+      "id": "stir_IAB17",
+      "label": "- Sports",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB17$"
+      ]
+    },
+    {
+      "id": "stir_IAB17-12",
+      "label": "- Football",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB17-12$"
+      ]
+    },
+    {
+      "id": "stir_IAB17-26",
+      "label": "- Pro Basketball",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB17-26$"
+      ]
+    },
+    {
+      "id": "stir_IAB17-27",
+      "label": "- Pro Ice Hockey",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB17-27$"
+      ]
+    },
+    {
+      "id": "stir_IAB18",
+      "label": "- Style & Fashion",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB18$"
+      ]
+    },
+    {
+      "id": "stir_IAB19",
+      "label": "- Technology & Computing",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB19$"
+      ]
+    },
+    {
+      "id": "stir_IAB2",
+      "label": "- Automotive",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB2$"
+      ]
+    },
+    {
+      "id": "stir_IAB2-15",
+      "label": "- Mororcycles",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB2-15$"
+      ]
+    },
+    {
+      "id": "stir_IAB2-16",
+      "label": "- Off-Road Vehicles",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB2-16$"
+      ]
+    },
+    {
+      "id": "stir_IAB2-2",
+      "label": "- Auto Repair",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB2-2$"
+      ]
+    },
+    {
+      "id": "stir_IAB2-3",
+      "label": "- Buying/Selling Cars",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB2-3$"
+      ]
+    },
+    {
+      "id": "stir_IAB20",
+      "label": "- Travel",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB20$"
+      ]
+    },
+    {
+      "id": "stir_IAB21",
+      "label": "- Real Estate",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB21$"
+      ]
+    },
+    {
+      "id": "stir_IAB21-1",
+      "label": "- Apartments",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB21-1$"
+      ]
+    },
+    {
+      "id": "stir_IAB21-3",
+      "label": "- Buying/Selling Homes",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB21-3$"
+      ]
+    },
+    {
+      "id": "stir_IAB22",
+      "label": "- Shopping",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB22$"
+      ]
+    },
+    {
+      "id": "stir_IAB3",
+      "label": "- Business",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB3$"
+      ]
+    },
+    {
+      "id": "stir_IAB3-5",
+      "label": "- Construction",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB3-5$"
+      ]
+    },
+    {
+      "id": "stir_IAB4",
+      "label": "- Careers",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB4$"
+      ]
+    },
+    {
+      "id": "stir_IAB4-10",
+      "label": "- U.S. Military",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB4-10$"
+      ]
+    },
+    {
+      "id": "stir_IAB4-4",
+      "label": "- Job Fairs",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB4-4$"
+      ]
+    },
+    {
+      "id": "stir_IAB4-5",
+      "label": "- Job Search",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB4-5$"
+      ]
+    },
+    {
+      "id": "stir_IAB4-7",
+      "label": "- Nursing",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB4-7$"
+      ]
+    },
+    {
+      "id": "stir_IAB5",
+      "label": "- Education",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB5$"
+      ]
+    },
+    {
+      "id": "stir_IAB5-10",
+      "label": "- Homeschooling",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB5-10$"
+      ]
+    },
+    {
+      "id": "stir_IAB5-13",
+      "label": "- Private School",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB5-13$"
+      ]
+    },
+    {
+      "id": "stir_IAB5-7",
+      "label": "- English as a 2nd Language",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB5-7$"
+      ]
+    },
+    {
+      "id": "stir_IAB6",
+      "label": "- Family & Parenting",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6$"
+      ]
+    },
+    {
+      "id": "stir_IAB6-2",
+      "label": "- Babies & Toddlers",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-2$"
+      ]
+    },
+    {
+      "id": "stir_IAB6-3",
+      "label": "- Daycare/Pre School",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-3$"
+      ]
+    },
+    {
+      "id": "stir_IAB6-4",
+      "label": "- Family Internet",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-4$"
+      ]
+    },
+    {
+      "id": "stir_IAB6-5",
+      "label": "- Parenting - K-6 Kids",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-5$"
+      ]
+    },
+    {
+      "id": "stir_IAB7",
+      "label": "- Health & Fitness",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-1",
+      "label": "- Exercise",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-1$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-15",
+      "label": "- Cold and Flu",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-15$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-19",
+      "label": "- Dermatology",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-19$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-25",
+      "label": "- Herbs for Health",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-25$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-31",
+      "label": "- Mens Health",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-31$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-32",
+      "label": "- Nutrition",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-32$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-38",
+      "label": "- Senior Health",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-38$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-4",
+      "label": "- Allergies",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-4$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-41",
+      "label": "- Smoking Cessation",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-41$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-44",
+      "label": "- Weight Loss",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-44$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-45",
+      "label": "- Womens Health",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-45$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-5",
+      "label": "- Holistic Healing",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-5$"
+      ]
+    },
+    {
+      "id": "stir_IAB8",
+      "label": "- Food & Drink",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB8$"
+      ]
+    },
+    {
+      "id": "stir_IAB9",
+      "label": "- Hobbies & Interests",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "iab"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB9$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-ABC",
+      "label": "- ABC",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-ABC$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-APTV",
+      "label": "- Apple TV",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-APTV$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-CBS2",
+      "label": "- CBS",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-CBS2$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-DisPlus",
+      "label": "- Disney Plus",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-DisPlus$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-ESPN1",
+      "label": "- ESPN",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-ESPN1$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-FOX",
+      "label": "- Fox",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-FOX$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-FX",
+      "label": "- FX",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-FX$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-HBO",
+      "label": "- HBO",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-HBO$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-NBC",
+      "label": "- NBC",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-NBC$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-OWN",
+      "label": "- OWN",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-OWN$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-Show",
+      "label": "- Showtime",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-Show$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-Starz",
+      "label": "- Starz",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-Starz$"
+      ]
+    },
+    {
+      "id": "stir_IAB1-TBS",
+      "label": "- TBS",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB1-TBS$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-FinS",
+      "label": "- Financial Services",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-FinS$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-HIns",
+      "label": "- Health Insurance",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-HIns$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-LI",
+      "label": "- Life Insurance",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-LI$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-M",
+      "label": "- Mortgages",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-M$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-PfR",
+      "label": "- Planning for Retirement",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-PfR$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-REI",
+      "label": "- Real Estate Investor",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-REI$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-RP",
+      "label": "- Retirement Planning",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-RP$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-S",
+      "label": "- Student",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-S$"
+      ]
+    },
+    {
+      "id": "stir_IAB13-SB",
+      "label": "- Stocks & Bonds",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB13-SB$"
+      ]
+    },
+    {
+      "id": "stir_IAB21-PreMove",
+      "label": "- Pre-Movers",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB21-PreMove$"
+      ]
+    },
+    {
+      "id": "stir_IAB3-Farm",
+      "label": "- Farming",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB3-Farm$"
+      ]
+    },
+    {
+      "id": "stir_IAB3-Recruit",
+      "label": "- Recruiters",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB3-Recruit$"
+      ]
+    },
+    {
+      "id": "stir_IAB3-RemW",
+      "label": "- Remote Work",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB3-RemW$"
+      ]
+    },
+    {
+      "id": "stir_IAB4-Carr",
+      "label": "- Careers",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB4-Carr$"
+      ]
+    },
+    {
+      "id": "stir_IAB4-Job",
+      "label": "- Job Search",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB4-Job$"
+      ]
+    },
+    {
+      "id": "stir_IAB4-RW",
+      "label": "- Remote Working",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB4-RW$"
+      ]
+    },
+    {
+      "id": "stir_IAB4-Ret",
+      "label": "- Retirement",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB4-Ret$"
+      ]
+    },
+    {
+      "id": "stir_IAB6-Par",
+      "label": "- Parenting Teens",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-Par$"
+      ]
+    },
+    {
+      "id": "stir_IAB6-SL",
+      "label": "- Senior Living",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB6-SL$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-ADD",
+      "label": "- Attention Deficit Disorder",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-ADD$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-AaA",
+      "label": "- Autism and Asperger's",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-AaA$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-CaF",
+      "label": "- Cold and Flu",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-CaF$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-DaC",
+      "label": "- Diseases and Conditions",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-DaC$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-E",
+      "label": "- Epidemic",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-E$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-ED",
+      "label": "- Eating Disorders",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-ED$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-ENa",
+      "label": "- Ear Nose and Throat",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-ENa$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-EaM",
+      "label": "- Endocrine and Metabolic Diseases",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-EaM$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-FAC",
+      "label": "- First Aid Care",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-FAC$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-H",
+      "label": "- Healthcare",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-H$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-HI",
+      "label": "- Hearing Impaired",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-HI$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-Hosp",
+      "label": "- Hospital Care",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-Hosp$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-ID",
+      "label": "- Infectious Diseases",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-ID$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-IaA",
+      "label": "- Injuries and Accidents",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-IaA$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-Imm",
+      "label": "- Immunology",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-Imm$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-Labs",
+      "label": "- Labs and Medical Tests",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-Labs$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-MH",
+      "label": "- Medical Health",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-MH$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-MHC",
+      "label": "- Mental Health Conditions",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-MHC$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-MR",
+      "label": "- Medical Research",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-MR$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-NBS",
+      "label": "- New Business Startups",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-NBS$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-ND",
+      "label": "- Neurological Disorders",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-ND$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-Onc",
+      "label": "- Oncology",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-Onc$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-PD",
+      "label": "- Pharmaceutical Drugs",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-PD$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-Pharm",
+      "label": "- Pharmacology",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-Pharm$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-Phys",
+      "label": "- Physiology",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-Phys$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-Psyc",
+      "label": "- Psychology and Psychoanalysis",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-Psyc$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-Psyc2",
+      "label": "- Psychology and Psychiatry",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-Psyc2$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-SAa",
+      "label": "- Substance Abuse and Alcoholism",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-SAa$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-SaM",
+      "label": "- Spa and Massage",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-SaM$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-Sx",
+      "label": "- Surgery",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-Sx$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-TD",
+      "label": "- Thyroid Disease",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-TD$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-VD",
+      "label": "- Vegetarian Diet",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-VD$"
+      ]
+    },
+    {
+      "id": "stir_IAB7-VI",
+      "label": "- Vision Impaired",
+      "description": "",
+      "tags": {
+        "field-hint": "date",
+        "iab-group": "lbd1"
+      },
+      "type": "select-map",
+      "field-name": "trigger_date",
+      "field-list": [],
+      "keep-top-values": null,
+      "other-label": null,
+      "count-nulls": false,
+      "value-label-map": {},
+      "map-file": null,
+      "skip-unmapped": false,
+      "high-cardinality": true,
+      "filter-field-regex": [
+        "category",
+        "IAB7-VI$"
+      ]
+    }
+  ]
+}

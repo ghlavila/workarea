@@ -1,0 +1,130 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'UpdateCassNcoa data'
+
+Resources:
+  EC2LaunchTemplate:
+    Type: AWS::EC2::LaunchTemplate
+    Properties:
+      LaunchTemplateName: UpdateCassNcoa
+      LaunchTemplateData:
+        ImageId: ami-00a929b66ed6e0de6
+        InstanceType: t2.micro
+        SecurityGroupIds:
+          - sg-0407dd74c56b2727d
+          - sg-04cdf630d72a56bd9
+        InstanceInitiatedShutdownBehavior: terminate
+        #InstanceMarketOptions:
+        #  MarketType: spot
+        #  SpotOptions:
+        #    SpotInstanceType: one-time
+        TagSpecifications:
+          - ResourceType: instance
+            Tags:
+              - Key: Name
+                Value: gh-data-proc
+              - Key: AutoStart
+                Value: "true"
+        UserData:
+          Fn::Base64: !Sub |
+            #!/bin/bash
+            # Mount EFS volume
+            yum install -y amazon-efs-utils
+            mkdir -p /data
+            mount -t efs fs-0df4c6640249cc812 /data
+
+            # Create lavila user
+            useradd -m -c "Luis Avila" -G wheel -s /bin/bash -d /data/home/lavila lavila
+            echo "lavila ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/lavila
+            # Change lavila's home directory
+            usermod -d /data/home/lavila lavila
+
+            # Run commands as a specific user
+            sudo -iu lavila bash << EOF
+
+            # get the most recent code from git
+            cd /data/git/data_processing/ && git pull
+
+            /data/git/data_processing/scripts/run_daily_tasks.py
+
+            # Wait for all background processes to finish
+            wait
+
+            # Initiate shutdown
+            shutdown -h now
+
+            EOF
+
+  LaunchEC2Function:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: launch-gh-data-proc-ec2
+      Handler: index.handler
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Runtime: python3.8
+      Timeout: 90  # Increase this value (in seconds) as needed
+      MemorySize: 256  # Increase this value (in MB) as needed
+      Code:
+        ZipFile: |
+          import boto3
+          import json
+
+          def handler(event, context):
+              ec2 = boto3.client('ec2')
+              
+              response = ec2.run_instances(
+                  LaunchTemplate={
+                      'LaunchTemplateName': 'GhDataProc',
+                      'Version': '$Latest'
+                  },
+                  MinCount=1,
+                  MaxCount=1
+              )
+              
+              instance_id = response['Instances'][0]['InstanceId']
+              return {
+                  'statusCode': 200,
+                  'body': json.dumps(f"EC2 instance {instance_id} launched successfully")
+              }
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: AllowEC2Launch
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - ec2:RunInstances
+                  - ec2:CreateTags
+                  - ec2:DescribeInstances
+                Resource: '*'
+
+  DailyScheduleRule:
+    Type: AWS::Events::Rule
+    Properties:
+      Name: DailyEC2Launch
+      Description: 'Trigger Lambda function daily at 6 AM Eastern Time'
+      ScheduleExpression: 'cron(0 10 * * ? *)'  # 6 AM EDT / 5 AM EST
+      State: ENABLED
+      Targets:
+        - Arn: !GetAtt LaunchEC2Function.Arn
+          Id: DailyEC2LaunchTarget
+
+  PermissionForEventsToInvokeLambda:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref LaunchEC2Function
+      Action: 'lambda:InvokeFunction'
+      Principal: 'events.amazonaws.com'
+      SourceArn: !GetAtt DailyScheduleRule.Arn

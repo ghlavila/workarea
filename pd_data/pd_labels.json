@@ -1,0 +1,94 @@
+{
+  "ALL": {
+    "label": "ALL",
+    "high_cardinality": false
+  },
+  "pd_start_service_date": {
+    "label": "Service Start Date",
+    "high_cardinality": true
+  },
+  "pd_end_service_date": {
+    "label": "Service End Date",
+    "high_cardinality": true
+  },
+  "pd_email": {
+    "label": "Patient Email",
+    "high_cardinality": false
+  },
+  "pd_mobile_phone": {
+    "label": "Patient Mobile",
+    "high_cardinality": false
+  },
+  "pd_cpt": {
+    "label": "CPT Code",
+    "high_cardinality": false
+  },
+  "pd_cpt_desc": {
+    "label": "CPT Description",
+    "high_cardinality": false
+  },
+  "pd_cpt_svc": {
+    "label": "CPT Service Line",
+    "high_cardinality": false
+  },
+  "pd_icd": {
+    "label": "ICD10 Code",
+    "high_cardinality": false
+  },
+  "pd_icd_desc": {
+    "label": "ICD10 Description",
+    "high_cardinality": false
+  },
+  "pd_ins_plan_name": {
+    "label": "Insurance Plan",
+    "high_cardinality": false
+  },
+  "pd_financial_class_name": {
+    "label": "Financial Class",
+    "high_cardinality": false
+  },
+  "pd_location_name": {
+    "label": "Location Name",
+    "high_cardinality": false
+  },
+  "pd_ren_provider_name": {
+    "label": "Provider Name",
+    "high_cardinality": false
+  },
+  "pd_date_of_birth": {
+    "label": " Patient Date of Birth",
+    "high_cardinality": true
+  },
+  "pd_race": {
+    "label": "Patient Race",
+    "high_cardinality": false
+  },
+  "pd_ethnicity": {
+    "label": "Patient Ethnicity",
+    "high_cardinality": false
+  },
+  "pd_marital_status": {
+    "label": "Patient Marital Status",
+    "high_cardinality": false
+  },
+  "pd_gender": {
+    "label": "Patient Gender",
+    "high_cardinality": false
+  },
+  "pd_spoken_language": {
+    "label": "Patient Spoken Language",
+    "high_cardinality": false
+  },
+  "pd_practice_id": {
+    "label": "Practice ID",
+    "high_cardinality": false
+  },
+  "pd_practice_name": {
+    "label": "Practice Name",
+    "high_cardinality": false
+  },
+  "pd_charge_amt": {
+    "label": "Charge Amount",
+    "high_cardinality": false
+  }
+}

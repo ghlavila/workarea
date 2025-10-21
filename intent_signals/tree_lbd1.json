@@ -1,0 +1,606 @@
+{
+  "id": "intent-signals",
+  "label": "Growth-Signals",
+  "help_text": "Behavioral intent data sourced daily from internet traffic",
+  "members": [
+    {
+      "group": {
+        "id": "IAB1",
+        "label": "Arts & Entertainment",
+        "help_text": "IAB OpenRTB 2.4 category 1",
+        "members": [
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-ABC",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-APTV",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-CBS2",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-DisPlus",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-ESPN1",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-FOX",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-FX",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-HBO",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-NBC",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-OWN",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-Show",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-Starz",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB1-TBS",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB3",
+        "label": "Business",
+        "help_text": "IAB OpenRTB 2.4 category 3",
+        "members": [
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB3-Farm",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB3-Recruit",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB3-RemW",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB4",
+        "label": "Careers",
+        "help_text": "IAB OpenRTB 2.4 category 4",
+        "members": [
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB4-Carr",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB4-Job",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB4-RW",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB4-Ret",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB6",
+        "label": "Family & Parenting",
+        "help_text": "IAB OpenRTB 2.4 category 6",
+        "members": [
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB6-Par",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB6-SL",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB7",
+        "label": "Health & Fitness",
+        "help_text": "IAB OpenRTB 2.4 category 7",
+        "members": [
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-ADD",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-AaA",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-CaF",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-DaC",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-E",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-ED",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-ENa",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-EaM",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-FAC",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-H",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-HI",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-Hosp",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-ID",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-IaA",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-Imm",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-Labs",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-MH",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-MHC",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-MR",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-NBS",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-ND",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-Onc",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-PD",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-Pharm",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-Phys",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-Psyc",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-Psyc2",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-SAa",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-SaM",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-Sx",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-TD",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-VD",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB7-VI",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB13",
+        "label": "Personal Finance",
+        "help_text": "IAB OpenRTB 2.4 category 13",
+        "members": [
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB13-FinS",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB13-HIns",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB13-LI",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB13-M",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB13-PfR",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB13-REI",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB13-RP",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB13-S",
+              "table_node": null,
+              "version": "latest"
+            }
+          },
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB13-SB",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    },
+    {
+      "group": {
+        "id": "IAB21",
+        "label": "Real Estate",
+        "help_text": "IAB OpenRTB 2.4 category 21",
+        "members": [
+          {
+            "select": {
+              "table_id": "intent-signals",
+              "select_id": "IAB21-PreMove",
+              "table_node": null,
+              "version": "latest"
+            }
+          }
+        ],
+        "default_logic": "and",
+        "tags": null
+      }
+    }
+  ],
+  "default_logic": "and",
+  "tags": null
+}

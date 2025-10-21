@@ -1,0 +1,8 @@
+{
+    "workbench.startupEditor": "welcomePage",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.editor.autoLockGroups": {
+        "default": true,
+        "workbench.editors.gettingStartedInput": true
+    }
+}

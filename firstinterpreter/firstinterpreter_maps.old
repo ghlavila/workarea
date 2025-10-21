@@ -1,0 +1,260 @@
+{
+    "id": "firstinterpreter_data",
+    "label": "Auton Insurance Information",
+    "description": "Auto Insurance Information",
+    "tags": {
+        "default_royalty": [ "FIRST INTERPRETER" ],
+        "perms": [],
+	"athena-table": "firstinterpreter_data___RUN_DATE__"
+    },
+    "node": 0,
+    "selects": [
+        {
+            "id": "ALL",
+            "label": "ALL",
+            "type" : "select-all"
+        },
+        {
+            "id": "fi_allstate_fc_ins_co_cps",
+            "label": "Allstate F&C Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "allstate_fc_ins_co"
+        },
+        {
+            "id": "fi_american_national_pc_co_cps",
+            "label": "American National P&C Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_national_pc_co"
+        },
+        {
+            "id": "fi_auto_club_ins_assn_cps",
+            "label": "Auto Club Ins Assn",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "auto_club_ins_assn"
+        },
+        {
+            "id": "fi_auto_owners_ins_co_cps",
+            "label": "Auto-Owners Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "auto_owners_ins_co"
+        },
+        {
+            "id": "fi_country_preferred_ins_co_cps",
+            "label": "COUNTRY Preferred Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "country_preferred_ins_co"
+        },
+        {
+            "id": "fi_colorado_farm_bureau_ins_co_cps",
+            "label": "Colorado Farm Bureau Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "colorado_farm_bureau_ins_co"
+        },
+        {
+            "id": "fi_erie_ins_exchange_cps",
+            "label": "Erie Ins Exchange",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "erie_ins_exchange"
+        },
+        {
+            "id": "fi_farmers_ins_co_of_az_cps",
+            "label": "Farmers Ins Co of AZ",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "farmers_ins_co_of_az"
+        },
+        {
+            "id": "fi_farmers_ins_exchange_cps",
+            "label": "Farmers Ins Exchange",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "farmers_ins_exchange"
+        },
+        {
+            "id": "fi_geico_casualty_co_cps",
+            "label": "GEICO Casualty Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "geico_casualty_co"
+        },
+        {
+            "id": "fi_illinois_farmers_ins_co_cps",
+            "label": "Illinois Farmers Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "illinois_farmers_ins_co"
+        },
+        {
+            "id": "fi_nationwide_pc_ins_co_cps",
+            "label": "Nationwide P&C Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "nationwide_pc_ins_co"
+        },
+        {
+            "id": "fi_owners_ins_co_cps",
+            "label": "Owners Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "owners_ins_co"
+        },
+        {
+            "id": "fi_progressive_advanced_ins_co_cps",
+            "label": "Progressive Advanced Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "progressive_advanced_ins_co"
+        },
+        {
+            "id": "fi_progressive_direct_ins_co_cps",
+            "label": "Progressive Direct Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "progressive_direct_ins_co"
+        },
+        {
+            "id": "fi_progressive_universal_ins_co_cps",
+            "label": "Progressive Universal Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "progressive_universal_ins_co"
+        },
+        {
+            "id": "fi_safeco_ins_co_of_america_cps",
+            "label": "Safeco Ins Co of America",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_america"
+        },
+        {
+            "id": "fi_safeco_ins_co_of_il_cps",
+            "label": "Safeco Ins Co of IL",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_il"
+        },
+        {
+            "id": "fi_standard_fire_ins_co_cps",
+            "label": "Standard Fire Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "standard_fire_ins_co"
+        },
+        {
+            "id": "fi_state_farm_mutl_automobile_ins_cps",
+            "label": "State Farm Mutl Automobile Ins",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "state_farm_mutl_automobile_ins"
+        },
+        {
+            "id": "fi_travelers_property_cas_ins_co_cps",
+            "label": "Travelers Property Cas Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "travelers_property_cas_ins_co"
+        },
+        {
+            "id": "fi_trumbull_ins_co_cps",
+            "label": "Trumbull Ins Co",
+            "description": "Market Competitive Rating is a real-time metric that shows insurance providers how competitively they rank against other carriers for a specific consumer shopping for insurance.",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "trumbull_ins_co"
+        }
+    ]
+}
