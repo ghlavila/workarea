@@ -1,0 +1,52 @@
+{
+    "id": "fi_nsauto",
+    "label": "Non-standard Auto Insurance Information",
+    "description": "Non-standard Auto Insurance Information",
+    "tags": {
+        "default_royalty": [ "FIRST INTERPRETER" ],
+        "perms": [],
+	"athena-table": "fi_nsauto___RUN_DATE__"
+
+    },
+    "node": 0,
+    "selects": [
+        {
+            "id": "ALL",
+            "label": "ALL",
+            "type" : "select-all"
+        },
+        {
+            "id": "fi_nsauto_bristol_west_preferred_ins_co",
+            "label": "Bristol West Preferred Ins Co [FARMERS INS GRP]",
+            "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "bristol_west_preferred_ins_co"
+        },
+        {
+            "id": "fi_nsauto_geico_ind_co",
+            "label": "GEICO Ind Co [BERKSHIRE HATHAWAY GRP]",
+            "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "geico_ind_co"
+        },
+        {
+            "id": "fi_nsauto_progressive_advanced_ins_co",
+            "label": "Progressive Advanced Ins Co [PROGRESSIVE GRP]",
+            "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "progressive_advanced_ins_co"
+        }
+    ]
+}

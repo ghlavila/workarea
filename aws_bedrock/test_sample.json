@@ -1,0 +1,361 @@
+{
+  "id": "fi_nsauto",
+  "label": "Non-standard Auto Insurance Information",
+  "description": "Non-standard Auto Insurance Information",
+  "tags": {
+    "default_royalty": [
+      "FIRST INTERPRETER"
+    ],
+    "perms": [],
+    "athena-table": "fi_nsauto___RUN_DATE__"
+  },
+  "node": 0,
+  "selects": [
+    {
+      "id": "ALL",
+      "label": "ALL",
+      "type": "select-all"
+    },
+    {
+      "id": "fi_nsauto_bristol_west_preferred_ins_co",
+      "label": "Bristol West Preferred Ins Co [FARMERS INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "bristol_west_preferred_ins_co"
+    },
+    {
+      "id": "fi_nsauto_geico_ind_co",
+      "label": "GEICO Ind Co [BERKSHIRE HATHAWAY GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "geico_ind_co"
+    },
+    {
+      "id": "fi_nsauto_progressive_advanced_ins_co",
+      "label": "Progressive Advanced Ins Co [PROGRESSIVE GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "progressive_advanced_ins_co"
+    },
+    {
+      "id": "fi_nsauto_safeway_ins_co_of_la",
+      "label": "Safeway Ins Co of LA [SAFEWAY INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "safeway_ins_co_of_la"
+    },
+    {
+      "id": "fi_nsauto_dairyland_county_mutual_ins_co",
+      "label": "Dairyland County Mutual Ins Co [SENTRY INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "dairyland_county_mutual_ins_co"
+    },
+    {
+      "id": "fi_nsauto_allstate_ind_co",
+      "label": "Allstate Ind Co [ALLSTATE INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "allstate_ind_co"
+    },
+    {
+      "id": "fi_nsauto_mountain_laurel_assurance_co",
+      "label": "Mountain Laurel Assurance Co [PROGRESSIVE GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "mountain_laurel_assurance_co"
+    },
+    {
+      "id": "fi_nsauto_viking_ins_co_of_wi",
+      "label": "Viking Ins Co of WI [SENTRY INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "viking_ins_co_of_wi"
+    },
+    {
+      "id": "fi_nsauto_progressive_universal_ins_co",
+      "label": "Progressive Universal Ins Co [PROGRESSIVE GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "progressive_universal_ins_co"
+    },
+    {
+      "id": "fi_nsauto_direct_general_ins_co_of_ms",
+      "label": "Direct General Ins Co of MS [ALLSTATE INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "direct_general_ins_co_of_ms"
+    },
+    {
+      "id": "fi_nsauto_progressive_direct_ins_co",
+      "label": "Progressive Direct Ins Co [PROGRESSIVE GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "progressive_direct_ins_co"
+    },
+    {
+      "id": "fi_nsauto_progressive_max_ins_co",
+      "label": "Progressive Max Ins Co [PROGRESSIVE GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "progressive_max_ins_co"
+    },
+    {
+      "id": "fi_nsauto_sentry_ins_co",
+      "label": "Sentry Ins Co [SENTRY INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "sentry_ins_co"
+    },
+    {
+      "id": "fi_nsauto_direct_general_ins_co",
+      "label": "Direct General Ins Co [ALLSTATE INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "direct_general_ins_co"
+    },
+    {
+      "id": "fi_nsauto_progressive_county_mutl_ins_co",
+      "label": "Progressive County Mutl Ins Co [PROGRESSIVE GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "progressive_county_mutl_ins_co"
+    },
+    {
+      "id": "fi_nsauto_dairyland_ins_co",
+      "label": "Dairyland Ins Co [SENTRY INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "dairyland_ins_co"
+    },
+    {
+      "id": "fi_nsauto_peak_pc_ins_corp",
+      "label": "Peak P&C Ins Corp [SENTRY INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "peak_pc_ins_corp"
+    },
+    {
+      "id": "fi_nsauto_permanent_general_assr_corp",
+      "label": "Permanent General Assr Corp [SENTRY INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "permanent_general_assr_corp"
+    },
+    {
+      "id": "fi_nsauto_progressive_select_ins_co",
+      "label": "Progressive Select Ins Co [PROGRESSIVE GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "progressive_select_ins_co"
+    },
+    {
+      "id": "fi_nsauto_infinity_ins_co",
+      "label": "Infinity Ins Co [Kemper Corp Grp]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "infinity_ins_co"
+    },
+    {
+      "id": "fi_nsauto_state_farm_fire_casualty_co",
+      "label": "State Farm Fire & Casualty Co [STATE FARM GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "state_farm_fire_casualty_co"
+    },
+    {
+      "id": "fi_nsauto_safeway_ins_co_of_ga",
+      "label": "Safeway Ins Co of GA [SAFEWAY INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "safeway_ins_co_of_ga"
+    },
+    {
+      "id": "fi_nsauto_progressive_marathon_ins_co",
+      "label": "Progressive Marathon Ins Co [PROGRESSIVE GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "progressive_marathon_ins_co"
+    },
+    {
+      "id": "fi_nsauto_safeway_ins_co",
+      "label": "Safeway Ins Co [SAFEWAY INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "safeway_ins_co"
+    },
+    {
+      "id": "fi_nsauto_bristol_west_ins_co",
+      "label": "Bristol West Ins Co [FARMERS INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "bristol_west_ins_co"
+    },
+    {
+      "id": "fi_nsauto_mga_ins_co",
+      "label": "MGA Ins Co [STATE FARM GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "mga_ins_co"
+    },
+    {
+      "id": "fi_nsauto_progressive_premier_ins_co",
+      "label": "Progressive Premier Ins Co [PROGRESSIVE GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "progressive_premier_ins_co"
+    },
+    {
+      "id": "fi_nsauto_american_access_casualty_co",
+      "label": "American Access Casualty Co [Kemper Corp Grp]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "american_access_casualty_co"
+    },
+    {
+      "id": "fi_nsauto_progressive_paloverde_ins_co",
+      "label": "Progressive Paloverde Ins Co [PROGRESSIVE GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "progressive_paloverde_ins_co"
+    },
+    {
+      "id": "fi_nsauto_united_financial_casualty_co",
+      "label": "United Financial Casualty Co [PROGRESSIVE GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "united_financial_casualty_co"
+    },
+    {
+      "id": "fi_nsauto_safeway_ins_co_of_al_inc",
+      "label": "Safeway Ins Co [SAFEWAY INS GRP]",
+      "description": "NSA-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  The score is variable against gender, marital status, and age.  NSA: Rav4, low limit cov, no disc, low ins score, etc",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "safeway_ins_co_of_al_inc"
+    }
+  ]
+}

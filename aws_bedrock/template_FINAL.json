@@ -1,0 +1,1603 @@
+{
+    "id": "fi_home",
+    "label": "Home Insurance CPS",
+    "description": "Home Insurance CPS",
+    "tags": {
+        "default_royalty": [ "FIRST INTERPRETER" ],
+        "perms": [],
+	"athena-table": "fi_home___RUN_DATE__"
+
+    },
+    "node": 0,
+    "selects": [
+        {
+            "id": "ALL",
+            "label": "ALL",
+            "type" : "select-all"
+        },
+        {
+            "id": "fi_home_allstate_vehicle_prop_ins_co_age0_cov200k",
+            "label": "Allstate Vehicle & Prop Ins Co [ALLSTATE INS GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "allstate_vehicle_prop_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_allstate_vehicle_prop_ins_co_age0_cov350k",
+            "label": "Allstate Vehicle & Prop Ins Co [ALLSTATE INS GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "allstate_vehicle_prop_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_allstate_vehicle_prop_ins_co_age0_cov500k",
+            "label": "Allstate Vehicle & Prop Ins Co [ALLSTATE INS GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "allstate_vehicle_prop_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_allstate_vehicle_prop_ins_co_age0_cov750k",
+            "label": "Allstate Vehicle & Prop Ins Co [ALLSTATE INS GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "allstate_vehicle_prop_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_allstate_vehicle_prop_ins_co_age30_cov200k",
+            "label": "Allstate Vehicle & Prop Ins Co [ALLSTATE INS GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "allstate_vehicle_prop_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_allstate_vehicle_prop_ins_co_age30_cov350k",
+            "label": "Allstate Vehicle & Prop Ins Co [ALLSTATE INS GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "allstate_vehicle_prop_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_allstate_vehicle_prop_ins_co_age30_cov500k",
+            "label": "Allstate Vehicle & Prop Ins Co [ALLSTATE INS GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "allstate_vehicle_prop_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_allstate_vehicle_prop_ins_co_age30_cov750k",
+            "label": "Allstate Vehicle & Prop Ins Co [ALLSTATE INS GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "allstate_vehicle_prop_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_great_northern_ins_co_age0_cov200k",
+            "label": "Great Northern Ins Co [Chubb Ltd Grp] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "great_northern_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_great_northern_ins_co_age0_cov350k",
+            "label": "Great Northern Ins Co [Chubb Ltd Grp] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "great_northern_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_great_northern_ins_co_age0_cov500k",
+            "label": "Great Northern Ins Co [Chubb Ltd Grp] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "great_northern_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_great_northern_ins_co_age0_cov750k",
+            "label": "Great Northern Ins Co [Chubb Ltd Grp] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "great_northern_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_great_northern_ins_co_age30_cov200k",
+            "label": "Great Northern Ins Co [Chubb Ltd Grp] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "great_northern_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_great_northern_ins_co_age30_cov350k",
+            "label": "Great Northern Ins Co [Chubb Ltd Grp] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "great_northern_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_great_northern_ins_co_age30_cov500k",
+            "label": "Great Northern Ins Co [Chubb Ltd Grp] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "great_northern_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_great_northern_ins_co_age30_cov750k",
+            "label": "Great Northern Ins Co [Chubb Ltd Grp] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "great_northern_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_american_strategic_ins_corp_age0_cov200k",
+            "label": "American Strategic Ins Corp [PROGRESSIVE GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_strategic_ins_corp_age0_cov200k"
+        },
+        {
+            "id": "fi_home_american_strategic_ins_corp_age0_cov350k",
+            "label": "American Strategic Ins Corp [PROGRESSIVE GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_strategic_ins_corp_age0_cov350k"
+        },
+        {
+            "id": "fi_home_american_strategic_ins_corp_age0_cov500k",
+            "label": "American Strategic Ins Corp [PROGRESSIVE GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_strategic_ins_corp_age0_cov500k"
+        },
+        {
+            "id": "fi_home_american_strategic_ins_corp_age0_cov750k",
+            "label": "American Strategic Ins Corp [PROGRESSIVE GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_strategic_ins_corp_age0_cov750k"
+        },
+        {
+            "id": "fi_home_american_strategic_ins_corp_age30_cov200k",
+            "label": "American Strategic Ins Corp [PROGRESSIVE GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_strategic_ins_corp_age30_cov200k"
+        },
+        {
+            "id": "fi_home_american_strategic_ins_corp_age30_cov350k",
+            "label": "American Strategic Ins Corp [PROGRESSIVE GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_strategic_ins_corp_age30_cov350k"
+        },
+        {
+            "id": "fi_home_american_strategic_ins_corp_age30_cov500k",
+            "label": "American Strategic Ins Corp [PROGRESSIVE GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_strategic_ins_corp_age30_cov500k"
+        },
+        {
+            "id": "fi_home_american_strategic_ins_corp_age30_cov750k",
+            "label": "American Strategic Ins Corp [PROGRESSIVE GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_strategic_ins_corp_age30_cov750k"
+        },
+        {
+            "id": "fi_home_auto_owners_ins_co_age0_cov200k",
+            "label": "Auto-Owners Ins Co [AUTO OWNERS GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "auto_owners_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_auto_owners_ins_co_age0_cov350k",
+            "label": "Auto-Owners Ins Co [AUTO OWNERS GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "auto_owners_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_auto_owners_ins_co_age0_cov500k",
+            "label": "Auto-Owners Ins Co [AUTO OWNERS GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "auto_owners_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_auto_owners_ins_co_age0_cov750k",
+            "label": "Auto-Owners Ins Co [AUTO OWNERS GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "auto_owners_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_auto_owners_ins_co_age30_cov200k",
+            "label": "Auto-Owners Ins Co [AUTO OWNERS GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "auto_owners_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_auto_owners_ins_co_age30_cov350k",
+            "label": "Auto-Owners Ins Co [AUTO OWNERS GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "auto_owners_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_auto_owners_ins_co_age30_cov500k",
+            "label": "Auto-Owners Ins Co [AUTO OWNERS GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "auto_owners_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_auto_owners_ins_co_age30_cov750k",
+            "label": "Auto-Owners Ins Co [AUTO OWNERS GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "auto_owners_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_erie_ins_co_age0_cov200k",
+            "label": "Erie Ins Co [ERIE INS GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "erie_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_erie_ins_co_age0_cov350k",
+            "label": "Erie Ins Co [ERIE INS GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "erie_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_erie_ins_co_age0_cov500k",
+            "label": "Erie Ins Co [ERIE INS GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "erie_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_erie_ins_co_age0_cov750k",
+            "label": "Erie Ins Co [ERIE INS GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "erie_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_erie_ins_co_age30_cov200k",
+            "label": "Erie Ins Co [ERIE INS GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "erie_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_erie_ins_co_age30_cov350k",
+            "label": "Erie Ins Co [ERIE INS GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "erie_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_erie_ins_co_age30_cov500k",
+            "label": "Erie Ins Co [ERIE INS GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "erie_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_erie_ins_co_age30_cov750k",
+            "label": "Erie Ins Co [ERIE INS GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "erie_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_american_family_ins_co_age0_cov200k",
+            "label": "American Family Ins Co [AMERICAN FAMILY INS GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_family_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_american_family_ins_co_age0_cov350k",
+            "label": "American Family Ins Co [AMERICAN FAMILY INS GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_family_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_american_family_ins_co_age0_cov500k",
+            "label": "American Family Ins Co [AMERICAN FAMILY INS GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_family_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_american_family_ins_co_age0_cov750k",
+            "label": "American Family Ins Co [AMERICAN FAMILY INS GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_family_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_american_family_ins_co_age30_cov200k",
+            "label": "American Family Ins Co [AMERICAN FAMILY INS GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_family_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_american_family_ins_co_age30_cov350k",
+            "label": "American Family Ins Co [AMERICAN FAMILY INS GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_family_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_american_family_ins_co_age30_cov500k",
+            "label": "American Family Ins Co [AMERICAN FAMILY INS GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_family_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_american_family_ins_co_age30_cov750k",
+            "label": "American Family Ins Co [AMERICAN FAMILY INS GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "american_family_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_shelter_mutual_ins_co_age0_cov200k",
+            "label": "Shelter Mutual Ins Co [SHELTER INS GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "shelter_mutual_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_shelter_mutual_ins_co_age0_cov350k",
+            "label": "Shelter Mutual Ins Co [SHELTER INS GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "shelter_mutual_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_shelter_mutual_ins_co_age0_cov500k",
+            "label": "Shelter Mutual Ins Co [SHELTER INS GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "shelter_mutual_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_shelter_mutual_ins_co_age0_cov750k",
+            "label": "Shelter Mutual Ins Co [SHELTER INS GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "shelter_mutual_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_shelter_mutual_ins_co_age30_cov200k",
+            "label": "Shelter Mutual Ins Co [SHELTER INS GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "shelter_mutual_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_shelter_mutual_ins_co_age30_cov350k",
+            "label": "Shelter Mutual Ins Co [SHELTER INS GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "shelter_mutual_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_shelter_mutual_ins_co_age30_cov500k",
+            "label": "Shelter Mutual Ins Co [SHELTER INS GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "shelter_mutual_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_shelter_mutual_ins_co_age30_cov750k",
+            "label": "Shelter Mutual Ins Co [SHELTER INS GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "shelter_mutual_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_country_mutual_ins_co_age0_cov200k",
+            "label": "COUNTRY Mutual Ins Co [Country Ins & Fin Serv Grp] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "country_mutual_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_country_mutual_ins_co_age0_cov350k",
+            "label": "COUNTRY Mutual Ins Co [Country Ins & Fin Serv Grp] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "country_mutual_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_country_mutual_ins_co_age0_cov500k",
+            "label": "COUNTRY Mutual Ins Co [Country Ins & Fin Serv Grp] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "country_mutual_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_country_mutual_ins_co_age0_cov750k",
+            "label": "COUNTRY Mutual Ins Co [Country Ins & Fin Serv Grp] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "country_mutual_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_country_mutual_ins_co_age30_cov200k",
+            "label": "COUNTRY Mutual Ins Co [Country Ins & Fin Serv Grp] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "country_mutual_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_country_mutual_ins_co_age30_cov350k",
+            "label": "COUNTRY Mutual Ins Co [Country Ins & Fin Serv Grp] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "country_mutual_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_country_mutual_ins_co_age30_cov500k",
+            "label": "COUNTRY Mutual Ins Co [Country Ins & Fin Serv Grp] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "country_mutual_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_country_mutual_ins_co_age30_cov750k",
+            "label": "COUNTRY Mutual Ins Co [Country Ins & Fin Serv Grp] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "country_mutual_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_nationwide_pc_ins_co_age0_cov200k",
+            "label": "Nationwide P&C Ins Co [NATIONWIDE CORP GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "nationwide_pc_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_nationwide_pc_ins_co_age0_cov350k",
+            "label": "Nationwide P&C Ins Co [NATIONWIDE CORP GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "nationwide_pc_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_nationwide_pc_ins_co_age0_cov500k",
+            "label": "Nationwide P&C Ins Co [NATIONWIDE CORP GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "nationwide_pc_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_nationwide_pc_ins_co_age0_cov750k",
+            "label": "Nationwide P&C Ins Co [NATIONWIDE CORP GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "nationwide_pc_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_nationwide_pc_ins_co_age30_cov200k",
+            "label": "Nationwide P&C Ins Co [NATIONWIDE CORP GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "nationwide_pc_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_nationwide_pc_ins_co_age30_cov350k",
+            "label": "Nationwide P&C Ins Co [NATIONWIDE CORP GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "nationwide_pc_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_nationwide_pc_ins_co_age30_cov500k",
+            "label": "Nationwide P&C Ins Co [NATIONWIDE CORP GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "nationwide_pc_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_nationwide_pc_ins_co_age30_cov750k",
+            "label": "Nationwide P&C Ins Co [NATIONWIDE CORP GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "nationwide_pc_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_owners_ins_co_age0_cov200k",
+            "label": "Owners Ins Co [AUTO OWNERS GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "owners_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_owners_ins_co_age0_cov350k",
+            "label": "Owners Ins Co [AUTO OWNERS GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "owners_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_owners_ins_co_age0_cov500k",
+            "label": "Owners Ins Co [AUTO OWNERS GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "owners_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_owners_ins_co_age0_cov750k",
+            "label": "Owners Ins Co [AUTO OWNERS GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "owners_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_owners_ins_co_age30_cov200k",
+            "label": "Owners Ins Co [AUTO OWNERS GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "owners_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_owners_ins_co_age30_cov350k",
+            "label": "Owners Ins Co [AUTO OWNERS GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "owners_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_owners_ins_co_age30_cov500k",
+            "label": "Owners Ins Co [AUTO OWNERS GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "owners_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_owners_ins_co_age30_cov750k",
+            "label": "Owners Ins Co [AUTO OWNERS GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "owners_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_america_age0_cov200k",
+            "label": "Safeco Ins Co of America [LIBERTY MUT GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_america_age0_cov200k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_america_age0_cov350k",
+            "label": "Safeco Ins Co of America [LIBERTY MUT GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_america_age0_cov350k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_america_age0_cov500k",
+            "label": "Safeco Ins Co of America [LIBERTY MUT GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_america_age0_cov500k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_america_age0_cov750k",
+            "label": "Safeco Ins Co of America [LIBERTY MUT GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_america_age0_cov750k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_america_age30_cov200k",
+            "label": "Safeco Ins Co of America [LIBERTY MUT GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_america_age30_cov200k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_america_age30_cov350k",
+            "label": "Safeco Ins Co of America [LIBERTY MUT GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_america_age30_cov350k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_america_age30_cov500k",
+            "label": "Safeco Ins Co of America [LIBERTY MUT GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_america_age30_cov500k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_america_age30_cov750k",
+            "label": "Safeco Ins Co of America [LIBERTY MUT GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_america_age30_cov750k"
+        },
+        {
+            "id": "fi_home_liberty_mutual_personal_ins_co_age0_cov200k",
+            "label": "Liberty Mutual Personal Ins Co [LIBERTY MUT GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "liberty_mutual_personal_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_liberty_mutual_personal_ins_co_age0_cov350k",
+            "label": "Liberty Mutual Personal Ins Co [LIBERTY MUT GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "liberty_mutual_personal_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_liberty_mutual_personal_ins_co_age0_cov500k",
+            "label": "Liberty Mutual Personal Ins Co [LIBERTY MUT GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "liberty_mutual_personal_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_liberty_mutual_personal_ins_co_age0_cov750k",
+            "label": "Liberty Mutual Personal Ins Co [LIBERTY MUT GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "liberty_mutual_personal_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_liberty_mutual_personal_ins_co_age30_cov200k",
+            "label": "Liberty Mutual Personal Ins Co [LIBERTY MUT GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "liberty_mutual_personal_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_liberty_mutual_personal_ins_co_age30_cov350k",
+            "label": "Liberty Mutual Personal Ins Co [LIBERTY MUT GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "liberty_mutual_personal_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_liberty_mutual_personal_ins_co_age30_cov500k",
+            "label": "Liberty Mutual Personal Ins Co [LIBERTY MUT GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "liberty_mutual_personal_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_liberty_mutual_personal_ins_co_age30_cov750k",
+            "label": "Liberty Mutual Personal Ins Co [LIBERTY MUT GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "liberty_mutual_personal_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_memberselect_ins_co_age0_cov200k",
+            "label": "MemberSelect Ins Co [AUTOMOBILE CLUB MI GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "memberselect_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_memberselect_ins_co_age0_cov350k",
+            "label": "MemberSelect Ins Co [AUTOMOBILE CLUB MI GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "memberselect_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_memberselect_ins_co_age0_cov500k",
+            "label": "MemberSelect Ins Co [AUTOMOBILE CLUB MI GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "memberselect_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_memberselect_ins_co_age0_cov750k",
+            "label": "MemberSelect Ins Co [AUTOMOBILE CLUB MI GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "memberselect_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_memberselect_ins_co_age30_cov200k",
+            "label": "MemberSelect Ins Co [AUTOMOBILE CLUB MI GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "memberselect_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_memberselect_ins_co_age30_cov350k",
+            "label": "MemberSelect Ins Co [AUTOMOBILE CLUB MI GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "memberselect_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_memberselect_ins_co_age30_cov500k",
+            "label": "MemberSelect Ins Co [AUTOMOBILE CLUB MI GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "memberselect_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_memberselect_ins_co_age30_cov750k",
+            "label": "MemberSelect Ins Co [AUTOMOBILE CLUB MI GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "memberselect_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_il_age0_cov200k",
+            "label": "Safeco Ins Co of IL [LIBERTY MUT GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_il_age0_cov200k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_il_age0_cov350k",
+            "label": "Safeco Ins Co of IL [LIBERTY MUT GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_il_age0_cov350k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_il_age0_cov500k",
+            "label": "Safeco Ins Co of IL [LIBERTY MUT GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_il_age0_cov500k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_il_age0_cov750k",
+            "label": "Safeco Ins Co of IL [LIBERTY MUT GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_il_age0_cov750k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_il_age30_cov200k",
+            "label": "Safeco Ins Co of IL [LIBERTY MUT GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_il_age30_cov200k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_il_age30_cov350k",
+            "label": "Safeco Ins Co of IL [LIBERTY MUT GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_il_age30_cov350k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_il_age30_cov500k",
+            "label": "Safeco Ins Co of IL [LIBERTY MUT GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_il_age30_cov500k"
+        },
+        {
+            "id": "fi_home_safeco_ins_co_of_il_age30_cov750k",
+            "label": "Safeco Ins Co of IL [LIBERTY MUT GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "safeco_ins_co_of_il_age30_cov750k"
+        },
+        {
+            "id": "fi_home_travco_ins_co_age0_cov200k",
+            "label": "TravCo Ins Co [Travelers Grp] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "travco_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_travco_ins_co_age0_cov350k",
+            "label": "TravCo Ins Co [Travelers Grp] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "travco_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_travco_ins_co_age0_cov500k",
+            "label": "TravCo Ins Co [Travelers Grp] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "travco_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_travco_ins_co_age0_cov750k",
+            "label": "TravCo Ins Co [Travelers Grp] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "travco_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_travco_ins_co_age30_cov200k",
+            "label": "TravCo Ins Co [Travelers Grp] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "travco_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_travco_ins_co_age30_cov350k",
+            "label": "TravCo Ins Co [Travelers Grp] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "travco_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_travco_ins_co_age30_cov500k",
+            "label": "TravCo Ins Co [Travelers Grp] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "travco_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_travco_ins_co_age30_cov750k",
+            "label": "TravCo Ins Co [Travelers Grp] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "travco_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_colorado_farm_bureau_ins_co_age0_cov200k",
+            "label": "Colorado Farm Bureau Ins Co [SOUTHERN FARM BUREAU CAS GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "colorado_farm_bureau_ins_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_colorado_farm_bureau_ins_co_age0_cov350k",
+            "label": "Colorado Farm Bureau Ins Co [SOUTHERN FARM BUREAU CAS GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "colorado_farm_bureau_ins_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_colorado_farm_bureau_ins_co_age0_cov500k",
+            "label": "Colorado Farm Bureau Ins Co [SOUTHERN FARM BUREAU CAS GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "colorado_farm_bureau_ins_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_colorado_farm_bureau_ins_co_age0_cov750k",
+            "label": "Colorado Farm Bureau Ins Co [SOUTHERN FARM BUREAU CAS GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "colorado_farm_bureau_ins_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_colorado_farm_bureau_ins_co_age30_cov200k",
+            "label": "Colorado Farm Bureau Ins Co [SOUTHERN FARM BUREAU CAS GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "colorado_farm_bureau_ins_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_colorado_farm_bureau_ins_co_age30_cov350k",
+            "label": "Colorado Farm Bureau Ins Co [SOUTHERN FARM BUREAU CAS GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "colorado_farm_bureau_ins_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_colorado_farm_bureau_ins_co_age30_cov500k",
+            "label": "Colorado Farm Bureau Ins Co [SOUTHERN FARM BUREAU CAS GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "colorado_farm_bureau_ins_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_colorado_farm_bureau_ins_co_age30_cov750k",
+            "label": "Colorado Farm Bureau Ins Co [SOUTHERN FARM BUREAU CAS GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "colorado_farm_bureau_ins_co_age30_cov750k"
+        },
+        {
+            "id": "fi_home_farmers_ins_exchange_age0_cov200k",
+            "label": "Farmers Ins Exchange [FARMERS INS GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "farmers_ins_exchange_age0_cov200k"
+        },
+        {
+            "id": "fi_home_farmers_ins_exchange_age0_cov350k",
+            "label": "Farmers Ins Exchange [FARMERS INS GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "farmers_ins_exchange_age0_cov350k"
+        },
+        {
+            "id": "fi_home_farmers_ins_exchange_age0_cov500k",
+            "label": "Farmers Ins Exchange [FARMERS INS GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "farmers_ins_exchange_age0_cov500k"
+        },
+        {
+            "id": "fi_home_farmers_ins_exchange_age0_cov750k",
+            "label": "Farmers Ins Exchange [FARMERS INS GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "farmers_ins_exchange_age0_cov750k"
+        },
+        {
+            "id": "fi_home_farmers_ins_exchange_age30_cov200k",
+            "label": "Farmers Ins Exchange [FARMERS INS GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "farmers_ins_exchange_age30_cov200k"
+        },
+        {
+            "id": "fi_home_farmers_ins_exchange_age30_cov350k",
+            "label": "Farmers Ins Exchange [FARMERS INS GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "farmers_ins_exchange_age30_cov350k"
+        },
+        {
+            "id": "fi_home_farmers_ins_exchange_age30_cov500k",
+            "label": "Farmers Ins Exchange [FARMERS INS GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "farmers_ins_exchange_age30_cov500k"
+        },
+        {
+            "id": "fi_home_farmers_ins_exchange_age30_cov750k",
+            "label": "Farmers Ins Exchange [FARMERS INS GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "farmers_ins_exchange_age30_cov750k"
+        },
+        {
+            "id": "fi_home_state_farm_fire_casualty_co_age0_cov200k",
+            "label": "State Farm Fire & Casualty Co [STATE FARM GRP] - New Home (0yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "state_farm_fire_casualty_co_age0_cov200k"
+        },
+        {
+            "id": "fi_home_state_farm_fire_casualty_co_age0_cov350k",
+            "label": "State Farm Fire & Casualty Co [STATE FARM GRP] - New Home (0yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "state_farm_fire_casualty_co_age0_cov350k"
+        },
+        {
+            "id": "fi_home_state_farm_fire_casualty_co_age0_cov500k",
+            "label": "State Farm Fire & Casualty Co [STATE FARM GRP] - New Home (0yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "state_farm_fire_casualty_co_age0_cov500k"
+        },
+        {
+            "id": "fi_home_state_farm_fire_casualty_co_age0_cov750k",
+            "label": "State Farm Fire & Casualty Co [STATE FARM GRP] - New Home (0yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "state_farm_fire_casualty_co_age0_cov750k"
+        },
+        {
+            "id": "fi_home_state_farm_fire_casualty_co_age30_cov200k",
+            "label": "State Farm Fire & Casualty Co [STATE FARM GRP] - Older Home (30yr), $200k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "state_farm_fire_casualty_co_age30_cov200k"
+        },
+        {
+            "id": "fi_home_state_farm_fire_casualty_co_age30_cov350k",
+            "label": "State Farm Fire & Casualty Co [STATE FARM GRP] - Older Home (30yr), $350k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "state_farm_fire_casualty_co_age30_cov350k"
+        },
+        {
+            "id": "fi_home_state_farm_fire_casualty_co_age30_cov500k",
+            "label": "State Farm Fire & Casualty Co [STATE FARM GRP] - Older Home (30yr), $500k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "state_farm_fire_casualty_co_age30_cov500k"
+        },
+        {
+            "id": "fi_home_state_farm_fire_casualty_co_age30_cov750k",
+            "label": "State Farm Fire & Casualty Co [STATE FARM GRP] - Older Home (30yr), $750k Coverage",
+            "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+            "type": "select-map",
+            "tags": {
+                "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+            },
+            "count-nulls": false,
+            "field-name": "state_farm_fire_casualty_co_age30_cov750k"
+        }
+    ]
+}

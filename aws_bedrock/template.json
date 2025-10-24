@@ -1,0 +1,40 @@
+{
+  "id": "fi_home",
+  "label": "Home Insurance CPS",
+  "description": "Home Insurance CPS",
+  "tags": {
+    "default_royalty": ["FIRST INTERPRETER"],
+    "perms": [],
+    "athena-table": "fi_home___RUN_DATE__"
+  },
+  "node": 0,
+  "selects": [
+    {
+      "id": "ALL",
+      "label": "ALL",
+      "type": "select-all"
+    },
+    {
+      "id": "fi_home_allstate_vehicle_prop_ins_co_age0_cov200k",
+      "label": "Allstate Vehicle & Prop Ins Co [ALLSTATE INS GRP] - New Home (0yr), $200k Coverage",
+      "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "allstate_vehicle_prop_ins_co_age0_cov200k"
+    },
+    {
+      "id": "fi_home_allstate_vehicle_prop_ins_co_age0_cov350k",
+      "label": "Allstate Vehicle & Prop Ins Co [ALLSTATE INS GRP] - New Home (0yr), $350k Coverage",
+      "description": "HOME-CPS is a relative competitive ranking of an insurance provider against other carriers for a specific consumer shopping for insurance.  It is to be considered as directional, not as a precise indicator.  All scores default InsuranceScore = Good",
+      "type": "select-map",
+      "tags": {
+        "field-hint": "range(1:Least Competitive,4:Most Competitive)"
+      },
+      "count-nulls": false,
+      "field-name": "allstate_vehicle_prop_ins_co_age0_cov350k"
+    }
+  ]
+}
